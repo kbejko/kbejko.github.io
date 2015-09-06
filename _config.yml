@@ -8,5 +8,5 @@ twitter_username: klazhdi
 github_username:  kbejko
 
 # Build settings
-markdown: kramdown
 
+highlighter: pygments
