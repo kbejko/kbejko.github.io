@@ -41,8 +41,13 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
+    max-width: 30%;
+    float: left;
+    margin-right: 1%;
     vertical-align: middle;
+    border-right: 2px solid #F72650;
+    border-bottom: 2px solid #F72650;
+    padding: 3px;
 }
 
 
