@@ -1,8 +1,7 @@
 ---
-published: true
+published: false
 ---
 
+## Testing prose
 
-## Testing Prose
-
-This is a test article for [Prose](http://prose.io/#about)
+Attempting to test [https://github.com/prose/prose](Prose on GitHub)
