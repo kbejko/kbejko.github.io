@@ -1,7 +1,7 @@
 # Site settings
 title: Jekyll and Klyde
 email: jekyllandklyde@gmail.com
-description: A blog/portfolio built in jekyll while learning jekyll.
+description: A blog/portfolio built using jekyll while learning to program.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://kbejko.github.io" # the base hostname & protocol for your site
 twitter_username: klazhdi
