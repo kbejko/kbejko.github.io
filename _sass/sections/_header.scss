@@ -1,0 +1,74 @@
+.site-header {
+  color: $text-color;
+  display: flex;
+  font-family: $base-font-family;
+  font-size: $base-font-size * 2;
+  justify-content: center;
+  margin: 1em auto;
+  max-height: 3em;
+  max-width: 800px;
+}
+
+
+.site-nav {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+
+  li {
+    margin: 1em;
+    text-decoration: underline;
+  }
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: row;
+  font-size: 0;
+  transition: font-size 400ms ease-in-out;
+}
+
+a:link {
+  color: $text-color;
+  text-decoration: none;
+
+  :hover,
+  :active {
+    text-decoration: line-through;
+  }
+
+}
+
+.burger {
+  cursor: pointer;
+  height: 12px;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+  transition: top 300ms ease-in-out;
+  width: 20px;
+}
+
+i {
+  background-color: $grey-color;
+  display: block;
+  height: 2px;
+  margin-bottom: 8px;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  width: 100%;
+}
+
+.rotate-down {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.rotate-up {
+  transform: rotate(-45deg);
+}
+
+.visible {
+  font-size: $base-font-size;
+  transition: font-size 500ms ease-in-out;
+  visibility: visible;
+}

@@ -1,1 +1,0 @@
-Learning Jekyll while building a portfolio in jekyll.
