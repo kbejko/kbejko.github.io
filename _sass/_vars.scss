@@ -5,8 +5,8 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #4682b4; // SteelBlue
-$link-color:       #000080; // Navy
+$text-color:       #000080; // Navy
+$link-color:       #4682b4; // SteelBlue
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -16,5 +16,7 @@ $grey-color-dark:  rgba(0, 0, 0, .28);
 $box-shadow-color-light: 0 0 4px $grey-color-light;
 $box-shadow-color-darker: 0 4px 8px $grey-color-dark;
 
+$max-body-width: 1200px;
 $border-width: 100%;
 $border-margin: 1em 2em;
+$max-body-margin: 1em auto;

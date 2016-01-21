@@ -1,0 +1,11 @@
+.page-content {
+  margin: $border-margin;
+  max-width: $border-width;
+  text-align: center;
+}
+
+.post-list {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
