@@ -6,12 +6,15 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #4682b4; // SteelBlue
-$background-color: #fdfdfd;
+$link-color:       #000080; // Navy
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-light: rgba(0, 0, 0, .14);
+$grey-color-dark:  rgba(0, 0, 0, .28);
 
-$shadow-color-light: rgba(0, 0, 0, .14);
-$shadow-color-darker: rgba(0, 0, 0, .28);
+$box-shadow-color-light: 0 0 4px $grey-color-light;
+$box-shadow-color-darker: 0 4px 8px $grey-color-dark;
+
+$border-width: 100%;
+$border-margin: 1em 2em;

@@ -1,13 +1,13 @@
 .site-header {
-  box-shadow: 0 0 4px $shadow-color-light, 0 4px 8px $shadow-color-darker;
-  color: $text-color;
+  box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+  color: $link-color;
   display: flex;
   font-family: $base-font-family;
   font-size: $base-font-size * 2;
   justify-content: center;
-  margin: 1em 2em;
-  max-height: 3em;
-  max-width: 100vmax;
+  margin: $border-margin;
+  // max-height: 3em;
+  max-width: $border-width;
 }
 
 .site-nav {
@@ -16,6 +16,11 @@
   li {
     margin: 1em;
     text-decoration: underline;
+  }
+
+  .visible {
+    font-size: $base-font-size;
+    transition: font-size 500ms ease-in-out;
   }
 }
 
@@ -38,37 +43,29 @@
 
 .burger {
   cursor: pointer;
-  height: 12px;
+  // height: 12px;
   left: 50%;
   margin-left: -10px;
   position: absolute;
   transition: top 300ms ease-in-out;
   width: 20px;
-}
 
-i {
-  background-color: $grey-color;
-  display: block;
-  height: 2px;
-  margin-bottom: 8px;
-  position: relative;
-  transition: all 300ms ease-in-out;
-  width: 100%;
+  i {
+    background-color: $grey-color;
+    display: block;
+    height: 2px;
+    margin-bottom: 8px;
+    position: relative;
+    transition: all 300ms ease-in-out;
+    width: 100%;
+  }
 
-}
+  .rotate-down {
+    position: absolute;
+    transform: rotate(45deg);
+  }
 
-.rotate-down {
-  position: absolute;
-  transform: rotate(45deg);
-}
-
-.rotate-up {
-
-  transform: rotate(-45deg);
-}
-
-.visible {
-  font-size: $base-font-size;
-  transition: font-size 500ms ease-in-out;
-  visibility: visible;
+  .rotate-up {
+    transform: rotate(-45deg);
+  }
 }
