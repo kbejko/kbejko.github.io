@@ -9,4 +9,4 @@ github_username:  kbejko
 
 # Build settings
 
-# highlighter: pygments
+highlighter: pygments

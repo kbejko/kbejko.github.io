@@ -1,11 +1,24 @@
 .page-content {
-  margin: $border-margin;
-  max-width: $border-width;
-  text-align: center;
+  box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+  display: flex;
+  justify-content: center;
+  line-height: $base-line-height;
+  margin: 1em auto;
+  max-width: $border-width - 30%;
+  padding: 1em;
 }
 
 .post-list {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+
+
+  li {
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+}
+
+.wrapper {
+  max-width: $border-width - 50%;
 }
