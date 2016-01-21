@@ -1,17 +1,17 @@
 .site-header {
+  box-shadow: 0 0 4px $shadow-color-light, 0 4px 8px $shadow-color-darker;
   color: $text-color;
   display: flex;
   font-family: $base-font-family;
   font-size: $base-font-size * 2;
   justify-content: center;
-  margin: 1em auto;
+  margin: 1em 2em;
   max-height: 3em;
-  max-width: 800px;
+  max-width: 100vmax;
 }
 
 
 .site-nav {
-  font-size: $base-font-size;
   line-height: $base-line-height;
 
   li {
@@ -25,18 +25,19 @@
   flex-flow: row;
   font-size: 0;
   transition: font-size 400ms ease-in-out;
-}
 
-a:link {
-  color: $text-color;
-  text-decoration: none;
+  a:link {
+    text-decoration: none;
 
-  :hover,
-  :active {
-    text-decoration: line-through;
+    :hover,
+    :active {
+      text-decoration: line-through;
+    }
+  
   }
 
 }
+
 
 .burger {
   cursor: pointer;
