@@ -1,15 +1,15 @@
 .site-header {
-  background-color: #fff;
+  background-color: $header-color;
   box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
   display: flex;
   justify-content: center;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-body-width;
   position: fixed;
   right: 0;
-  left: 0;
   top: $spacing-unit / 2;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: $max-body-width;
   z-index: 1;
 }
 
@@ -47,10 +47,10 @@
 .burger {
   cursor: pointer;
   left: 0;
-  right: 0;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
+  right: 0;
   transition: top 300ms ease-in-out;
   width: 20px;
 
