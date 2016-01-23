@@ -1,0 +1,19 @@
+.post-list {
+  display: flex;
+  flex-flow: column;
+
+   li {
+    box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+    margin: 1em auto;
+    padding: 1em;
+  }
+
+  .post-link {
+      text-decoration: none;
+      color: $text-color;
+      .post-title-link {
+        text-decoration: underline;
+        color: $link-color
+      }
+  }
+}

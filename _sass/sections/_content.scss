@@ -12,17 +12,6 @@
   padding: 1em;
 }
 
-.post-list {
-  display: flex;
-  flex-flow: column;
-
-
-  li {
-    justify-content: space-between;
-    margin-bottom: 1em;
-  }
-}
-
 .wrapper {
-  max-width: $border-width - 50%;
+  max-width: $border-width - 20%;
 }
