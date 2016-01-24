@@ -5,13 +5,23 @@
   line-height: $base-line-height;
   position: absolute;
   top: $spacing-unit * 3;
-  left: 0;
-  right: 0;
-  margin: 1em auto;
-  max-width: $border-width - 30%;
-  padding: 1em;
+  max-width: 100%;
 }
 
 .wrapper {
-  max-width: $border-width - 20%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: $first-bp) {
+  .page-content {
+    left: 0;
+    right: 0;
+    margin: 1em auto;
+    max-width: 70%;
+    padding: 1em;
+  }
+
+  .wrapper {
+    max-width: 90%
+  }
 }

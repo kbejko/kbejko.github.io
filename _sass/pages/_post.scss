@@ -1,5 +1,6 @@
 .post {
   font-size: $small-font-size;
+  padding: 3em;
 }
 
 
@@ -7,6 +8,7 @@
   .post {
     width: 100%;
     font-size: $small-font-size;
+    padding: 1em;
   }
 }
 
@@ -19,6 +21,6 @@
 
 
 .post-close {
-  left: 82%;
+  right: 15%;
   position: fixed;
 }
