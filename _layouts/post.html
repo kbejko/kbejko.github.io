@@ -3,10 +3,16 @@ layout: default
 ---
 <div class="post">
 
+  <a href="/journal">
+    <div class="post-close">
+      <i class="fa fa-times-circle"></i>
+    </div>
+  </a>
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
+  <hr>
 
   <article class="post-content">
     {{ content }}

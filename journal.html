@@ -4,10 +4,6 @@ title: Journal
 permalink: /journal/
 ---
 
-<!-- <div class="home"> -->
-
-  <!-- <h1 class="page-heading">Posts</h1> -->
-
   <ul class="post-list">
     {% for post in site.posts %}
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
@@ -24,5 +20,3 @@ permalink: /journal/
     </a>
     {% endfor %}
   </ul>
-
-<!-- </div> -->

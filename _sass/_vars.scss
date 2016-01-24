@@ -1,23 +1,30 @@
+//Words
 $base-font-family: 'Cutive Mono', monospace;
 $base-font-size:   16px;
-$small-font-size:  $base-font-size * .875;
+$small-font-size:  $base-font-size * .75;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+//Colors
 $text-color:       #000080; // Navy
 $link-color:       #4682b4; // SteelBlue
 $header-color:     #fff;    // White
 $code-bg-color:    #f5f5dc; // Beige
-
 $grey-color:       #828282;
+
+//Shadows
 $grey-color-light: rgba(0, 0, 0, .14);
 $grey-color-dark:  rgba(0, 0, 0, .28);
-
 $box-shadow-color-light: 0 0 4px $grey-color-light;
 $box-shadow-color-darker: 0 4px 8px $grey-color-dark;
 
-$max-body-width: 1200px;
+
 $border-width: 100%;
 $border-margin: 1em 2em;
 $max-body-margin: 1em auto;
+
+//Breakpoints
+$first-bp: 420px;
+$second-bp: 770px;
+$max-body-width: 1200px;

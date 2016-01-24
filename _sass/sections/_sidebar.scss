@@ -1,14 +1,14 @@
 .sidebar {
-  bottom: 10px;
+  bottom: 1em;
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 64px;
+  right: 3em;
   text-align: center;
 
   .fa {
     color: $link-color;
-    margin: 10px;
+    padding: .7em;
     text-shadow: $box-shadow-color-light, $box-shadow-color-darker;
   }
 
