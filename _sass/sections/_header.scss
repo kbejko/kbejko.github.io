@@ -1,13 +1,13 @@
-.site-header {
+.site-header,
+.contact {
   background-color: $header-color;
   box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
   display: flex;
-  justify-content: center;
   left: 0;
   max-width: 100%;
   position: fixed;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .site-nav {
@@ -21,7 +21,6 @@
 
 .nav-links {
   display: flex;
-  flex-flow: row;
   text-decoration: none;
 
   a:link {
@@ -33,13 +32,79 @@
   }
 }
 
+.burger {
+  cursor: pointer;
+  height: $base-font-size;
+  left: 90%;
+  position: fixed;
+  right: 0;
+  top: 24px;
+  transition: top 300ms ease-in-out;
+  width: 30px;
+  z-index: 3;
+}
 
-@media only screen and (min-width: $second-bp) {
-  .site-header {
+.first,
+.second {
+  background-color: $link-color;
+  display: block;
+  height: 1px;
+  margin-bottom: 8px;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  width: 100%;
+}
+
+.rotate-down {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.rotate-up {
+  transform: rotate(-45deg);
+}
+
+.contact {
+  font-size: 0;
+  top: 56px;
+  transition: font-size 300ms ease-in-out;
+  z-index: 1;
+
+  .fa {
+    color: $link-color;
+    padding: .7em 1em .7em .7em;
+    text-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+  }
+
+  a:hover {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.visible {
+  font-size: $base-font-size;
+  transition: font-size 300ms ease-in-out;
+}
+
+@media only screen and (min-width: $first-bp) {
+  .site-header,
+  .contact {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: $max-body-width) {
+  .site-header,
+  .contact,
+  .burger {
     left: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 90%;
+    max-width: 1200px;
     right: 0;
+  }
+
+  .burger {
+    left: 1100px;
   }
 }

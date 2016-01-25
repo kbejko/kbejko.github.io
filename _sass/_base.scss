@@ -15,20 +15,20 @@ code {
   background-color: $code-bg-color;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  font-size: 15px;
+  font-size: $small-font-size;
 }
 
 code {
-    padding: 1px 5px;
+  padding: 1px 5px;
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
+  overflow-x: scroll;
+  padding: 8px 12px;
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
+  > code {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
     }
 }

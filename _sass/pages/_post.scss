@@ -1,26 +1,26 @@
-.post {
-  font-size: $small-font-size;
-  padding: 3em;
-}
-
-
-@media only screen and (min-width: $first-bp) {
-  .post {
-    width: 100%;
-    font-size: $small-font-size;
-    padding: 1em;
-  }
-}
-
-@media only screen and (min-width: $second-bp) {
-  .post {
-    font-size: $base-font-size;
-  }
-}
-
-
-
-.post-close {
-  right: 15%;
-  position: fixed;
-}
+// .post {
+//   font-size: $small-font-size;
+//   padding: 3em;
+// }
+//
+//
+// @media only screen and (min-width: $first-bp) {
+//   .post {
+//     width: 100%;
+//     font-size: $small-font-size;
+//     padding: 1em;
+//   }
+// }
+//
+// @media only screen and (min-width: $second-bp) {
+//   .post {
+//     font-size: $base-font-size;
+//   }
+// }
+//
+//
+//
+// .post-close {
+//   right: 15%;
+//   position: fixed;
+// }
