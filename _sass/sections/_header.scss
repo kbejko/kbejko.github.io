@@ -86,7 +86,7 @@
   transition: font-size 300ms ease-in-out;
 }
 
-@media only screen and (min-width: $first-bp) {
+@media only screen and (min-width: $second-bp) {
   .site-header,
   .contact {
     justify-content: center;
