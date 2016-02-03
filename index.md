@@ -10,7 +10,7 @@ layout: default
 
 > I find it very helpful explaining newly learned concepts, and one way to do that is writing. You might ask, why put it online, why not just write in a notebook and call it a day? I think it's the idea that someone out there might be looking at this, so I must put forward my best work. Honestly this is purely for selfish reasons, but if somehow it helps anyone on any sort of new endeavor then I'm all for it.
 
-> The code for this site can be found [here](https://github.com/kbejko/kbejko.github.io). It's built with Jekyll. I wrote a bit [here](http://localhost:4000/jekyll/update/2015/09/05/how-to-get-started-with-jekyll.html) about getting started, but for thorough documentation please check out the [jekyll website](https://jekyllrb.com/). You will find all posts in the journal section, and 'other' is intended for any resources, projects, or people who inspire.
+> The code for this site can be found [here](https://github.com/kbejko/kbejko.github.io). It's built with Jekyll. I wrote a bit [here](http://kbejko.github.io/jekyll/update/2015/09/05/how-to-get-started-with-jekyll.html) about getting started, but for thorough documentation please check out the [jekyll website](https://jekyllrb.com/). You will find all posts in the journal section, and 'other' is intended for any resources, projects, or people who inspire.
 
 > Bear with me as I will make many mistakes.
 
