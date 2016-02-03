@@ -10,26 +10,21 @@
   z-index: 2;
 }
 
-.site-nav {
-  line-height: $base-line-height;
-
-  li {
-    margin: 1em;
-    text-decoration: underline;
-  }
-}
-
 .nav-links {
   display: flex;
-  text-decoration: none;
+  line-height: $base-line-height;
 
-  a:link {
-    text-decoration: none;
-
-    :hover {
-      text-decoration: line-through;
+    li {
+      margin: 1em;
     }
-  }
+    a:hover {
+      text-decoration: underline;;
+    }
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: tomato;
 }
 
 .burger {
