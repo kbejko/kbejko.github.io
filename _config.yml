@@ -4,9 +4,10 @@ email: kbejko@gmail.com
 description: Thoughts about learning web development or computer programming
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://kbejko.github.io" # the base hostname & protocol for your site
+permalink: /journal/:title
 twitter_username: klazhdi
 github_username:  kbejko
 
 # Build settings
 
-highlighter: rouge
+# highlighter: rouge

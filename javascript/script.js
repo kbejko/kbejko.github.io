@@ -13,13 +13,13 @@
 $(document).ready(function(){
   var home = $(".home")
   var journal = $(".journal")
-  var resources = $(".resources")
+  var resources = $(".other")
 
-  if (window.location.pathname === "/journal/") {
+  if (window.location.pathname.indexOf("/journal/") === 0) {
     home.removeClass("active")
     resources.removeClass("active")
     journal.addClass("active")
-  } else if (window.location.pathname === "/resources/") {
+  } else if (window.location.pathname.indexOf("/other/") === 0) {
     home.removeClass("active")
     resources.addClass("active")
   } else {

@@ -1,19 +1,1 @@
-.resources {
-  display: flex;
-  flex-flow: column;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  position: relative;
-  right: 0;
-  text-align: center;
-}
 
-.coding-related,
-.cooking-related,
-.misc {
-  box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
-  margin: 10px;
-  width: 90%;
-}
