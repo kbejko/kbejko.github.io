@@ -1,18 +1,15 @@
 .page-content {
-  box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
-  display: flex;
   font-size: $small-font-size;
-  justify-content: center;
   line-height: $base-line-height;
   max-width: 100%;
   padding: 1em;
   position: absolute;
   top: $spacing-unit * 4;
 }
+// .wrapper {
+//   box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+// }
 
-.wrapper {
-  max-width: 100%;
-}
 
 @media only screen and (min-width: $first-bp) {
   .page-content {
@@ -20,10 +17,6 @@
     margin: 1em auto;
     max-width: 90%;
     right: 0;
-  }
-
-  .wrapper {
-    max-width: 70%;
   }
 }
 

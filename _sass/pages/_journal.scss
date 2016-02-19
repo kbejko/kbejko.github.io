@@ -1,19 +1,29 @@
 .post-list {
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
+  justify-content: space-around;
 
-   li {
+  li {
     box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
-    margin: 1em auto;
+    margin: 1em;
     padding: 1em;
   }
 
   .post-link {
-      text-decoration: none;
-      color: $text-color;
-      .post-title-link {
-        text-decoration: underline;
-        color: $link-color
-      }
+    flex: 1 100%;
+    text-decoration: none;
+    color: $text-color;
+    .post-title-link {
+      text-decoration: underline;
+      color: $link-color;
+    }
+  }
+}
+
+@media only screen and (min-width: $second-bp) {
+  .post-list {
+    .post-link {
+      flex: 1 50%;
+    }
   }
 }

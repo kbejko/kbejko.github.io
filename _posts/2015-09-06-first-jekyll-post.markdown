@@ -5,7 +5,7 @@ date: 2015-09-06
 categories: jekyll update
 ---
 
-Creating new posts in jekyll is very simple. Run the following command `touch _posts/2015-09-06-initial-jekyll-setup.md` in the terminal.
+Creating new posts in jekyll is very simple. Run the following command `touch _posts/2015-09-06-some-great-title.md` in the terminal.
 
 It is important to name the files this way: YEAR-MONTH-DAY-title.MARKUP. YEAR has to be 4 digits, MONTH and DAY must be 2 digits, and the title separated by dashes.
 

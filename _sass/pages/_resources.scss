@@ -1,4 +1,30 @@
-a {
-  display: block;
-  text-align: center;
+.other-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  .resources,
+  .projects,
+  .misc {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: column wrap;
+    font-size: 1.5rem;
+    text-align: center;
+    a {
+      margin: 10px;
+      box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: $second-bp) {
+  .other-container {
+    .resources,
+    .projects,
+    .misc {
+      flex: 1 30%;
+    }
+  }
 }
