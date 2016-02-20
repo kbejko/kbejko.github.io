@@ -6,9 +6,10 @@
   position: absolute;
   top: $spacing-unit * 4;
 }
-// .wrapper {
-//   box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
-// }
+.post-wrapper {
+  box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+  // padding: 10%;
+}
 
 
 @media only screen and (min-width: $first-bp) {
