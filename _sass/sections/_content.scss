@@ -8,6 +8,7 @@
 
 .wrapper {
   box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+  overflow-x: hidden; 
   padding: 10%;
   p {
     margin: .5em auto;
