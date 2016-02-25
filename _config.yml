@@ -3,7 +3,7 @@ title: Klajdi Bejko
 email: kbejko@gmail.com
 description: Thoughts on learning web development
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://kbejko.github.io" # the base hostname & protocol for your site
+url: "https://kbejko.github.io" # the base hostname & protocol for your site
 permalink: /journal/:title
 twitter_username: klazhdi
 github_username:  kbejko
