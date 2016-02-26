@@ -8,21 +8,21 @@
      second.classList.toggle("rotate-up")
      contact.classList.toggle("visible")
    }
-})()
+})();
 
-$(document).ready(function(){
-  var home = $(".home")
-  var journal = $(".journal")
-  var resources = $(".other")
+(function underlineTab(){
+  var home = document.querySelector(".home")
+  var journal = document.querySelector(".journal")
+  var resources = document.querySelector(".other")
 
-  if (window.location.pathname.indexOf("/journal/") === 0) {
-    home.removeClass("active")
-    resources.removeClass("active")
-    journal.addClass("active")
-  } else if (window.location.pathname.indexOf("/other/") === 0) {
-    home.removeClass("active")
-    resources.addClass("active")
+  if (window.location.pathname.indexOf("/journal/") === 0){
+    home.classList.remove("active")
+    resources.classList.remove("active")
+    journal.classList.add("active")
+  } else if (window.location.pathname.indexOf("/other/") === 0){
+    home.classList.remove("active")
+    resources.classList.add("active")
   } else {
-    home.addClass("active")
+    home.classList.add("active")
   }
-})
+})();
