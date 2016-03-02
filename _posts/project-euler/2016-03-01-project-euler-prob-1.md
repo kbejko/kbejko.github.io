@@ -5,7 +5,7 @@ date: 2016-03-01
 categories: project euler
 ---
 
-#### Multiples of 3 and 5
+Multiples of 3 and 5
 
 One of the biggest challenges for me has been solving logical coding problems. And admittedly because it's been difficult, I've tended to shy away from them. But I've decided to stop putting it off and start working on [Project Euler](https://projecteuler.net) problems.
 

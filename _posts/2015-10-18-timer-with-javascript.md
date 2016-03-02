@@ -5,7 +5,7 @@ date: 2015-10-18
 categories: jekyll update
 ---
 
-#### Or how to build a stop watch that won't impress your friends.
+Or how to build a stop watch that won't impress your friends.
 
 Step one: Don't try to impress them.
 
