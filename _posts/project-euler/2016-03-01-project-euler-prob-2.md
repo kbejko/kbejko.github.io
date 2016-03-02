@@ -5,7 +5,7 @@ date: 2016-03-02
 categories: project euler
 ---
 
-####Even Fibonacci Numbers
+#### Even Fibonacci Numbers
 
 This [problem](https://projecteuler.net/problem=2) asks for a list of Fibonacci numbers with its last term being less than or equal to 4,000,000. Each Fibonacci term or number is calculated by adding its previous two terms. The problem also asks to start the list with 1 and 2 as the first two terms. So the next term would be 3 (1+2), the one after that 5 (2+3) and so on. The problem ultimately asks to find the sum of the even-valued terms.
 
