@@ -7,7 +7,7 @@ categories: project euler
 
 Multiples of 3 and 5
 
-One of the biggest challenges for me has been solving logical coding problems. And admittedly because it's been difficult, I've tended to shy away from them. But I've decided to stop putting it off and start working on [Project Euler](https://projecteuler.net) problems.
+One of the biggest challenges for me has been solving logical coding problems. And admittedly because it has been difficult, I've tended to shy away from them. But I've decided to stop putting it off and start working on [Project Euler](https://projecteuler.net) problems.
 
 I will try to work on one every day, starting today with the first problem [Multiples of 3 and 5](https://projecteuler.net/problem=1).
 
