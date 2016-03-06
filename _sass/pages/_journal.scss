@@ -4,7 +4,7 @@
   justify-content: space-around;
 
   li {
-    background-color: rgba(234, 234, 241, 0.5);
+    background-color: $bg-color-links;
     box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
     margin: 1em;
     padding: 1em;
@@ -29,11 +29,11 @@
     }
     li {
       box-shadow: none;
-      transition: all 0.2s ease-out;
+      transition: $link-pop-trans-down;
       &:hover {
         box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
         margin-top: .5em;
-        transition: all 0.1s ease-out;
+        transition: $link-pop-trans-up;
       }
     }
   }

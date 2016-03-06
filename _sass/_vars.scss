@@ -11,7 +11,7 @@ $text-color:       #000080; // Navy
 $link-color:       #4285f4; // Blue
 $header-color:     #fff;    // White
 $code-bg-color:    #f5f5dc; // Beige
-$grey-color:       #828282;
+$bg-color-links:   rgba(234, 234, 241, 0.5); //Faint Blue
 
 //Shadows
 $grey-color-light: rgba(0, 0, 0, .14);
@@ -19,6 +19,9 @@ $grey-color-dark:  rgba(0, 0, 0, .28);
 $box-shadow-color-light: 0 0 4px $grey-color-light;
 $box-shadow-color-darker: 0 4px 8px $grey-color-dark;
 
+//Transitions
+$link-pop-trans-up: all 0.2s ease-out;
+$link-pop-trans-down: all 0.3s ease-out;
 
 $border-width: 100%;
 $border-margin: 1em 2em;
