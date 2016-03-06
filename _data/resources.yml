@@ -1,0 +1,5 @@
+- name: GitHub Repo of General Assembly's Bootcamp Lessons
+  url: https://github.com/ga-wdi-lessons?page=1
+
+- name: Curriculum for Professional JavaScript Classroom Workshop
+  url: https://github.com/gmac/professional-javascript

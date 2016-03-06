@@ -1,24 +1,26 @@
 ---
 layout: default
-title: Resources
+title: Other
 permalink: /other/
 ---
-
 
   <div class="other-container">
     <div class="projects">
       <h1>Projects</h1>
-      <a href="http://klajdibejko.com/book-covers/">Book Covers</a>
-      <a href="http://klajdibejko.com/birthday-card/">Birthday Card</a>
+      {% for project in site.data.projects %}
+        <a href="{{project.url}}">{{project.name}}</a>
+      {% endfor %}
     </div>
     <div class="resources">
       <h1>Resources</h1>
-      <a href="https://github.com/ga-wdi-lessons?page=1" target="_blank">GitHub Repo of General Assembly's Bootcamp Lessons</a>
-      <a href="https://github.com/gmac/professional-javascript" target="_blank">Curriculum for Professional JavaScript Classroom Workshop</a>
+      {% for resource in site.data.resources %}
+        <a href="{{resource.url}}" target="_blank">{{resource.name}}</a>
+      {% endfor %}
     </div>
     <div class="misc">
       <h1>Miscellaneous</h1>
-      <a href="http://www.csstubemap.co.uk/" target="_blank">CSS Tube Map</a>
-      <a href="http://a.singlediv.com/" target="_blank">A Single Div</a>
+      {% for misc in site.data.miscellaneous %}
+        <a href="{{misc.url}}" target="_blank">{{misc.name}}</a>
+      {% endfor %}
     </div>
   </div>

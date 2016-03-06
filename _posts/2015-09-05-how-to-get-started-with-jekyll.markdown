@@ -2,7 +2,7 @@
 layout: post
 title:  "How to get started with Jekyll"
 date:   2015-09-05 10:56:25
-categories: jekyll
+categories: jekyll update
 ---
 
 First create a repository on github in the form of username.github.io. This makes the blog available for everyone to read at that url. Every time you push to github, the blog refreshes with the new content. It's that simple.
@@ -21,7 +21,7 @@ git commit -m "Initial commit"
 git push origin master
 {% endhighlight %}
 
->> 1. Clones the repository locally
+> 1. Clones the repository locally
 2. Changes directory to that repository
 3. Installs jekyll
 4. Installs jekyll in the existing directory, in this case username.github.io
