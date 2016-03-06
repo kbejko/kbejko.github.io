@@ -10,11 +10,10 @@ permalink: /journal/
       <a href="{{ post.url | prepend: site.baseurl }}">
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          <h2 class="post-title-link">
+          <h1 class="post-title-link">
             {{ post.title }}
-          </h2>
-          {{post.excerpt}}
+          </h1>
+          {{ post.content | strip_html | truncatewords: 3 }}
         </li>
       </a>
     </div>

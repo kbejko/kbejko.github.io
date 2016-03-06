@@ -4,9 +4,14 @@
   justify-content: space-around;
 
   li {
-    box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+    background-color: rgba(234, 234, 241, 0.5);
     margin: 1em;
     padding: 1em;
+    &:hover {
+      box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+      margin-top: .5em;
+      transition: all 0.1s ease-out;
+    }
   }
 
   .post-link {
