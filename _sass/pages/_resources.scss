@@ -17,10 +17,14 @@
       background-color: $bg-color-links;
       box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
       font-size: $base-font-size;
-      margin: 10px;
+      // margin: 10px;
     }
     i {
       font-size: $small-font-size;
+    }
+    span {
+      color: $text-color;
+      display: block;
     }
   }
 }

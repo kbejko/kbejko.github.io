@@ -2,7 +2,7 @@
 layout: post
 title: "Project Euler Problem 5"
 date: 2016-03-09
-categories: project euler
+categories: project-euler
 ---
 
 Smallest Multiple

@@ -1,5 +1,7 @@
 - name: Book Covers
   url: http://klajdibejko.com/book-covers/
+  desc: With HTML and SASS
 
 - name: Birthday Card
   url: http://klajdibejko.com/birthday-card/
+  desc: For my father - best viewed on desktop

@@ -2,7 +2,7 @@
 layout: post
 title: "Project Euler Problem 2"
 date: 2016-03-02
-categories: project euler
+categories: project-euler
 ---
 
 Even Fibonacci Numbers

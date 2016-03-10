@@ -2,7 +2,7 @@
 layout: post
 title: "Project Euler Problem 1"
 date: 2016-03-01
-categories: project euler
+categories: project-euler
 ---
 
 Multiples of 3 and 5

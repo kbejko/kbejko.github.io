@@ -1,5 +1,7 @@
-- name: GitHub Repo of General Assembly's Bootcamp Lessons
+- name: Coding Bootcamp Lessons
   url: https://github.com/ga-wdi-lessons?page=1
+  author: General Assembly
 
-- name: Curriculum for Professional JavaScript Classroom Workshop
+- name: Professional JavaScript
   url: https://github.com/gmac/professional-javascript
+  author: Greg MacWilliam

@@ -8,20 +8,21 @@ permalink: /other/
     <div class="projects">
       <h1>Projects</h1>
       {% for project in site.data.projects %}
-        <a href="{{project.url}}">{{project.name}}</a>
+      <a href="{{project.url}}">{{project.name}}<span>
+        {{project.desc}}
+      </span></a>
       {% endfor %}
     </div>
     <div class="resources">
       <h1>Resources <i class="fa fa-external-link"></i></h1>
       {% for resource in site.data.resources %}
-        <a href="{{resource.url}}" target="_blank">{{resource.name}}</a>
+        <a href="{{resource.url}}" target="_blank">{{resource.name}}<span>{{resource.author}}<span></a>
       {% endfor %}
     </div>
     <div class="misc">
-      <h1>Misc. <i class="fa fa-external-link"></i></h1>
-
+      <h1>Inspiration <i class="fa fa-external-link"></i></h1>
       {% for misc in site.data.miscellaneous %}
-        <a href="{{misc.url}}" target="_blank">{{misc.name}}</a>
+      <a href="{{misc.url}}" target="_blank">{{misc.name}}<span>{{misc.author}}<span></a>
       {% endfor %}
     </div>
   </div>

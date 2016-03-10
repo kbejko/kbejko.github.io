@@ -2,7 +2,7 @@
 layout: post
 title: "Project Euler Problem 3"
 date: 2016-03-03
-categories: project euler
+categories: project-euler
 ---
 
 Largest Prime Factor

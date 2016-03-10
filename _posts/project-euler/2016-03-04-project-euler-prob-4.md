@@ -2,7 +2,7 @@
 layout: post
 title: "Project Euler Problem 4"
 date: 2016-03-04
-categories: project euler
+categories: project-euler
 ---
 
 Largest Palindrome Product

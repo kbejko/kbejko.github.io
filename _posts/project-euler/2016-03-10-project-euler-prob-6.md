@@ -2,7 +2,7 @@
 layout: post
 title: "Project Euler Problem 6"
 date: 2016-03-10
-categories: project euler
+categories: project-euler
 ---
 
 Sum Square Difference
