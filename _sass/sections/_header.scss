@@ -70,8 +70,12 @@
     text-shadow: $box-shadow-color-light, $box-shadow-color-darker;
   }
 
-  a:hover {
-    transform: scale(1.5, 1.5);
+  a {
+    transition: $link-pop-trans-up;
+    &:hover {
+      transform: scale(1.5, 1.5);
+      transition: $link-pop-trans-down;
+    }
   }
 }
 

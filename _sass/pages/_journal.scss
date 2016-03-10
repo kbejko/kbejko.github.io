@@ -32,7 +32,7 @@
       transition: $link-pop-trans-down;
       &:hover {
         box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
-        margin-top: .5em;
+        transform: translateY(-0.5em);
         transition: $link-pop-trans-up;
       }
     }
