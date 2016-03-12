@@ -5,24 +5,50 @@ permalink: /other/
 ---
 
   <div class="other-container">
-    <div class="projects">
+
+    <div class="misc projects">
       <h1>Projects</h1>
       {% for project in site.data.projects %}
-      <a href="{{project.url}}">{{project.name}}<span>
-        {{project.desc}}
-      </span></a>
+      <div class="outer-misc-container">
+        <a href="{{project.url}}">
+          <div class="inner-misc-container">
+            <img src="{{project.image}}" alt="{{project.alt}}" />
+            <h3>{{project.name}}</h3>
+            <p>{{project.desc}}</p>
+          </div>
+        </a>
+      </div>
       {% endfor %}
     </div>
-    <div class="resources">
+
+    <div class="misc resources">
       <h1>Resources <i class="fa fa-external-link"></i></h1>
       {% for resource in site.data.resources %}
-        <a href="{{resource.url}}" target="_blank">{{resource.name}}<span>{{resource.author}}<span></a>
+      <div class="outer-misc-container">
+        <a href="{{resource.url}}" target="_blank">
+          <div class="inner-misc-container">
+            <img src="/assets/main/code-ss.jpg" alt="" />
+            <h3>{{resource.name}}</h3>
+            <p>{{resource.author}}<p>
+          </div>
+        </a>
+      </div>
       {% endfor %}
     </div>
-    <div class="misc">
+
+    <div class="misc inspiration">
       <h1>Inspiration <i class="fa fa-external-link"></i></h1>
       {% for misc in site.data.miscellaneous %}
-      <a href="{{misc.url}}" target="_blank">{{misc.name}}<span>{{misc.author}}<span></a>
+      <div class="outer-misc-container">
+        <a href="{{misc.url}}" target="_blank">
+          <div class="inner-misc-container">
+            <img src="{{misc.image}}" alt="{{misc.alt}}" />
+            <h3>{{misc.name}}</h3>
+            <p>{{misc.author}}<p>
+          </div>
+        </a>
+      </div>
       {% endfor %}
     </div>
+
   </div>

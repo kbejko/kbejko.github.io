@@ -1,49 +1,80 @@
 .other-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+}
 
-  .resources,
-  .projects,
-  .misc {
-    display: flex;
-    flex: 1 100%;
-    flex-flow: column wrap;
-    font-size: 1.5rem;
-    text-align: center;
-    a {
-      margin: 1em;
-      padding: 1em;
-      background-color: $bg-color-links;
-      box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
-      font-size: $base-font-size;
-      // margin: 10px;
-    }
-    i {
-      font-size: $small-font-size;
-    }
-    span {
-      color: $text-color;
-      display: block;
-    }
+.misc {
+  display: flex;
+  flex: 1 100%;
+  flex-flow: column wrap;
+  font-size: 1.5rem;
+  text-align: center;
+  .fa-external-link {
+    font-size: $small-font-size;
+  }
+}
+
+.outer-misc-container {
+  margin: 1em auto;
+  background-color: $bg-color-links;
+  box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+  font-size: $base-font-size;
+  width: 16em;
+  height: 16em;
+}
+
+
+.inner-misc-container {
+  height: 90%;
+  margin: 5%;
+  p {
+    color: $text-color;
+    font-size: $small-font-size;
+    overflow: hidden;
+    height: 25%;
+    line-height: 1;
+    margin-top: 2%;
+  }
+  img {
+    height: 60%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: $first-bp) {
+  .outer-misc-container {
+    width: 22em;
+    height: 22em;
   }
 }
 
 @media only screen and (min-width: $second-bp) {
-  .other-container {
-    .resources,
-    .projects,
-    .misc {
-      flex: 1 30%;
-      a {
-        box-shadow: none;
-        transition: $link-pop-trans-down;
-        &:hover {
-          box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
-          transform: translateY(-0.5em);
-          transition: $link-pop-trans-up;
-        }
-      }
+
+  .misc {
+    flex: 1 auto;
+  }
+  .outer-misc-container {
+    width: 11em;
+    height: 11em;
+    box-shadow: none;
+    transition: $link-pop-trans-down;
+    &:hover {
+      box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
+      transform: translateY(-0.5em);
+      transition: $link-pop-trans-up;
     }
+  }
+  .inner-misc-container {
+    h3 {
+      line-height: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: $third-bp) {
+  .outer-misc-container {
+    width: 16em;
+    height: 16em;
   }
 }

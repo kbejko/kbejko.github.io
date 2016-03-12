@@ -1,7 +1,11 @@
 - name: CSS Tube Map
   url: http://www.csstubemap.co.uk/
   author: John Galantini
+  image: ../assets/inspiration/css-tube-map-ss.png
+  alt: Image of CSS Tube Map Project
 
 - name: A Single Div
   url: http://a.singlediv.com/
   author: Lynn Fisher
+  image: ../assets/inspiration/a-single-div-ss.jpeg
+  alt: Image of A Single Div Project
