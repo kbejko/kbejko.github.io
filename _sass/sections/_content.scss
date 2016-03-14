@@ -11,7 +11,7 @@
   overflow-x: hidden;
   padding: 10%;
   p {
-    margin: .5em auto;
+    margin: .5em 1.5em;
   }
   .post-close {
     left: 95%;
@@ -28,9 +28,14 @@
   }
 }
 
-@media only screen and (min-width: $third-bp) {
+@media only screen and (min-width: $second-bp) {
   .page-content {
     font-size: $base-font-size;
+  }
+}
+
+@media only screen and (min-width: $third-bp) {
+  .page-content {
     max-width: 960px;
   }
 }

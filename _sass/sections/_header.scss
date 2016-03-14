@@ -28,12 +28,11 @@
 
 .burger {
   cursor: pointer;
-  height: $base-font-size;
+  height: 20px;
   left: 90%;
   position: fixed;
   right: 0;
-  top: 24px;
-  transition: top 300ms ease-in-out;
+  top: 22px;
   width: 30px;
   z-index: 3;
 }
@@ -42,11 +41,12 @@
 .second {
   background-color: $link-color;
   display: block;
-  height: 1px;
-  margin-bottom: 8px;
-  position: relative;
+  height: 6px;
   transition: all 300ms ease-in-out;
   width: 100%;
+}
+.first {
+  margin-bottom: 6px;
 }
 
 .rotate-down {
@@ -61,7 +61,6 @@
 .contact {
   font-size: 0;
   top: 56px;
-  transition: font-size 300ms ease-in-out;
   z-index: 1;
 
   .fa {

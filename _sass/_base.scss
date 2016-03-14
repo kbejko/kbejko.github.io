@@ -1,12 +1,14 @@
 body {
   color: $text-color;
   font-family: $base-font-family;
+  font-weight: 400;
   font-size: $base-font-size;
 }
 
 a {
   color: $link-color;
   text-decoration: none;
+  font-weight: 700;
 }
 
 
