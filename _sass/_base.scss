@@ -1,14 +1,12 @@
 body {
   color: $text-color;
   font-family: $base-font-family;
-  font-weight: 400;
   font-size: $base-font-size;
 }
 
 a {
   color: $link-color;
   text-decoration: none;
-  font-weight: 700;
 }
 
 
@@ -23,8 +21,9 @@ code {
 
 pre {
   border: 1px solid $text-color;
+  margin: 1.5rem;
   overflow-x: scroll;
-  padding: 8px 12px;
+  padding: .1rem .5rem;
 
   > code {
     border: 0;

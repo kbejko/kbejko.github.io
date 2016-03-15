@@ -10,8 +10,9 @@
   box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
   overflow-x: hidden;
   padding: 10%;
+  h1,
   p {
-    margin: .5em 1.5em;
+    margin: .5rem 1.5rem;
   }
   .post-close {
     left: 95%;

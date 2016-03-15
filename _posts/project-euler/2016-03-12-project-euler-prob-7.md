@@ -7,7 +7,7 @@ categories: project-euler
 
 10001st Prime Number
 
-This problem ask for the 10001st prime number. A prime number is any natural number greater than one and only divisible evenly by one and itself. The challenge, because obviously all real numbers are evenly divisible by one and themselves, is to figure out a way to check if that number doesn't also divide evenly by any other number between 1 and itself.
+This [problem](https://projecteuler.net/problem=7) ask for the 10001st prime number. A prime number is any natural number greater than one and only divisible evenly by one and itself. The challenge, because obviously all real numbers are evenly divisible by one and themselves, is to figure out a way to check if that number doesn't also divide evenly by any other number between 1 and itself.
 
 I started by setting up an empty prime numbers array and a for loop starting at 2 (the first prime number) to run until the 10,001st prime number is reached.
 
@@ -75,7 +75,7 @@ function nThPrimeNumber(n) {
         isPrime = false
       }
     }
-    
+
     if (isPrime) {
       primesArr.push(possiblePrime)
     }
