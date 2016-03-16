@@ -4,6 +4,12 @@
   image: ../assets/projects/book-cover-ss.jpg
   alt: Image of Book Covers Project
 
+- name: Moonrise Kingdom
+  url: http://klajdibejko.com/moonrise-kingdom/
+  desc: With HTML and class
+  image: ../assets/projects/moonrise-kingdom.jpg
+  alt: Image of Moonrise Kingdom Project  
+
 - name: Birthday Card
   url: http://klajdibejko.com/birthday-card/
   desc: For my father - best viewed on desktop
