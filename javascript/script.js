@@ -10,19 +10,17 @@
    }
 })();
 
-(function underlineTab(){
-  var home = document.querySelector(".home")
-  var journal = document.querySelector(".journal")
-  var resources = document.querySelector(".other")
+// Checks current path name and matches it to li class name to add class active
+(function underlineCurrentTab(){
+  var navLinks = document.querySelector('.nav-links').children
+  var pathNameStrip = window.location.pathname.replace(/\//g, '')
 
-  if (window.location.pathname.indexOf("/journal/") === 0){
-    home.classList.remove("active")
-    resources.classList.remove("active")
-    journal.classList.add("active")
-  } else if (window.location.pathname.indexOf("/other/") === 0){
-    home.classList.remove("active")
-    resources.classList.add("active")
-  } else {
-    home.classList.add("active")
+  for (var i = 0; i < navLinks.length; i++) {
+    if (pathNameStrip === navLinks[i].className) {
+      navLinks[i].classList.add('active')
+    }
+    if (pathNameStrip === '' && navLinks[i].className === 'home') {
+      navLinks[i].classList.add('active')
+    }
   }
 })();
