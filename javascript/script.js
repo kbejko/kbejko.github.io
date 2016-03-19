@@ -16,11 +16,13 @@
   var pathNameStrip = window.location.pathname.replace(/\//g, '')
 
   for (var i = 0; i < navLinks.length; i++) {
-    if (pathNameStrip === navLinks[i].className) {
+    if (pathNameStrip === navLinks[i].id) {
       navLinks[i].classList.add('active')
     }
-    if (pathNameStrip === '' && navLinks[i].className === 'home') {
+    if (pathNameStrip === '' && navLinks[i].id === 'home') {
       navLinks[i].classList.add('active')
     }
   }
 })();
+
+console.log('Hire me :)')
