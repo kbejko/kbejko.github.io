@@ -1,4 +1,5 @@
 body {
+  background-color: $header-color;
   color: $text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -21,9 +22,9 @@ code {
 
 pre {
   border: 1px solid $text-color;
-  margin: 1.5rem;
+  font-size: $small-font-size;
   overflow-x: scroll;
-  padding: .1rem .5rem;
+  padding: 1rem;
 
   > code {
     border: 0;
@@ -32,6 +33,11 @@ pre {
     }
 }
 
+@media only screen and (min-width: $third-bp) {
+  pre {
+    font-size: $base-font-size;
+  }
+}
 blockquote, q {
   margin: 1em;
 }

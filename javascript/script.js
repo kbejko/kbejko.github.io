@@ -13,13 +13,13 @@
 // Checks current path name and matches it to li class name to add class active
 (function underlineCurrentTab(){
   var navLinks = document.querySelector('.nav-links').children
-  var pathNameStrip = window.location.pathname.replace(/\//g, '')
+  var pathName = location.pathname.split('/')[1]
 
   for (var i = 0; i < navLinks.length; i++) {
-    if (pathNameStrip === navLinks[i].id) {
+    if (pathName === navLinks[i].id) {
       navLinks[i].classList.add('active')
     }
-    if (pathNameStrip === '' && navLinks[i].id === 'home') {
+    if (pathName === '' && navLinks[i].id === "home") {
       navLinks[i].classList.add('active')
     }
   }
