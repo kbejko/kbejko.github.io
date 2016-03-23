@@ -6,12 +6,12 @@
 
 - name: Moonrise Kingdom
   url: http://klajdibejko.com/moonrise-kingdom/
-  desc: With HTML and class
+  desc: With HTML and SASS
   image: ../assets/projects/moonrise-kingdom.jpg
-  alt: Image of Moonrise Kingdom Project  
+  alt: Image of Moonrise Kingdom Project
 
 - name: Birthday Card
   url: http://klajdibejko.com/birthday-card/
   desc: For my father - best viewed on desktop
   image: ../assets/projects/birthday-card-ss.jpg
-  alt: Image of Birthday Card Projct
+  alt: Image of Birthday Card Project
