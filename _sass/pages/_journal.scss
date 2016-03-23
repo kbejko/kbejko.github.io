@@ -1,7 +1,14 @@
 .post-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 
   li {
     background-color: $bg-color-links;
@@ -11,7 +18,10 @@
   }
 
   .post-link {
-    flex: 1 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
     .post-title-link {
       text-decoration: underline;
     }
@@ -24,14 +34,20 @@
 @media only screen and (min-width: $second-bp) {
   .post-list {
     .post-link {
-      flex: 1 50%;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 50%;
+          -ms-flex: 1 50%;
+              flex: 1 50%;
     }
     li {
       box-shadow: none;
+      -webkit-transition: $link-pop-trans-down;
       transition: $link-pop-trans-down;
       &:hover {
         box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
-        transform: translateY(-0.5em);
+        -webkit-transform: translateY(-0.5em);
+                transform: translateY(-0.5em);
+        -webkit-transition: $link-pop-trans-up;
         transition: $link-pop-trans-up;
       }
     }
