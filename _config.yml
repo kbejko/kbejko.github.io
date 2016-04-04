@@ -11,6 +11,3 @@ github_username:  kbejko
 # Build settings
 
 # highlighter: rouge
-
-gems:
-  - octopress-autoprefixer
