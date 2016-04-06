@@ -4,14 +4,14 @@ $base-font-size:   18px;
 $small-font-size:  $base-font-size * .75;
 $base-line-height: 1.45;
 
-$spacing-unit:     30px;
+// $spacing-unit:     30px;
 
 //Colors
-$text-color:       #000080; // Navy
-$link-color:       #4285f4; // Blue
-$header-color:     #fff;    // White
-$code-bg-color:    #f5f5dc; // Beige
-$bg-color-links:   rgba(234, 234, 241, 0.5); //Faint Blue
+$navy:       #000080; // Navy
+$blue:       #4285f4; // Blue
+$white:     #fff;    // White
+$beige:    #f5f5dc; // Beige
+$faint-blue:   rgba(234, 234, 241, 0.5); //Faint Blue
 
 //Shadows
 $grey-color-light: rgba(0, 0, 0, .14);

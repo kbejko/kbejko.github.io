@@ -1,0 +1,23 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+  <div class="projects-container">
+
+    <div class="projects">
+      {% for project in site.data.projects %}
+      <div class="outer-projects-container">
+        <a href="{{project.url}}">
+          <div class="inner-projects-container">
+            <img src="{{project.image}}" alt="{{project.alt}}" />
+            <h3>{{project.name}}</h3>
+            <p>{{project.desc}}</p>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>

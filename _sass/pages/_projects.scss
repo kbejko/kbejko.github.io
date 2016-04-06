@@ -1,4 +1,4 @@
-.other-container {
+.projects-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11,7 +11,7 @@
           justify-content: space-around;
 }
 
-.misc {
+.projects {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,7 +30,7 @@
   }
 }
 
-.outer-misc-container {
+.outer-projects-container {
   margin: 1em auto;
   background-color: $bg-color-links;
   box-shadow: $box-shadow-color-light, $box-shadow-color-darker;
@@ -40,7 +40,7 @@
 }
 
 
-.inner-misc-container {
+.inner-projects-container {
   height: 90%;
   margin: 5%;
   p {
@@ -58,7 +58,7 @@
 }
 
 @media only screen and (min-width: $first-bp) {
-  .outer-misc-container {
+  .outer-projects-container {
     width: 22em;
     height: 22em;
   }
@@ -66,13 +66,14 @@
 
 @media only screen and (min-width: $second-bp) {
 
-  .misc {
+  .projects {
     -webkit-box-flex: 1;
     -webkit-flex: 1 auto;
         -ms-flex: 1 auto;
             flex: 1 auto;
+            flex-flow: row wrap;
   }
-  .outer-misc-container {
+  .outer-projects-container {
     width: 11em;
     height: 11em;
     box-shadow: none;
@@ -86,7 +87,7 @@
       transition: $link-pop-trans-up;
     }
   }
-  .inner-misc-container {
+  .inner-projects-container {
     h3 {
       line-height: 1;
     }
@@ -94,7 +95,7 @@
 }
 
 @media only screen and (min-width: $third-bp) {
-  .outer-misc-container {
+  .outer-projects-container {
     width: 16em;
     height: 16em;
   }
