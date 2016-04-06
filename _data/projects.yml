@@ -1,3 +1,9 @@
+- name: Weather
+  url: http://klajdibejko.com/weather/
+  desc: HTML, SASS, JQuery, Weather Underground API, SVG Animation
+  image: ../assets/projects/weather.jpg
+  alt: Image of Weather Project
+  
 - name: Book Covers
   url: http://klajdibejko.com/book-covers/
   desc: With HTML and SASS
