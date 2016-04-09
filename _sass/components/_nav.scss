@@ -1,0 +1,49 @@
+.site__nav {
+  box-shadow: $box-shadow-light, $box-shadow-dark;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  top: -100vh;
+  left: 0;
+  transition: top 0.7s cubic-bezier(0.4, 0, 1, 1);
+
+  .site__nav--links {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: 50%;
+    justify-content: space-around;
+  }
+
+  .site__nav--contact {
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    margin: 1em;
+  }
+
+  li {
+    padding: .5rem;
+  }
+  a:hover {
+    color: $red;
+  }
+}
+
+// Adds visible class to whole nav
+.visible {
+  position: fixed;
+  top: 4rem;
+  transition: top 1.4s cubic-bezier(0.4, 0, 1, 1);
+}
+
+// Current active link
+.active {
+  border-right: 3px solid $red;
+  a {
+    color: $red;
+    cursor: default;
+    pointer-events: none;
+  }
+}

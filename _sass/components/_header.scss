@@ -1,0 +1,85 @@
+.site__header {
+  align-items: center;
+  background: $white;
+  box-shadow: $box-shadow-light, $box-shadow-dark;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  height: 4rem;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 2;
+
+  &--logo {
+    background: url('../assets/Logo-Test.svg');
+    background-position: center;
+    background-size: cover;
+    height: 3rem;
+    width: 3rem;
+    &:hover {
+      transform: rotate(15deg);
+      transition: all 1s ease;
+    }
+  }
+
+  &--name {
+    font-size: 1em;
+    color: $navy;
+  }
+
+  &--burger {
+    cursor: pointer;
+    width: 2rem;
+
+    .line-top, .line-bottom {
+      background: $blue;
+      display: block;
+      height: .25rem;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease;
+      transform-origin: .47rem; //this is as close as I can get it to an x
+    }
+    .line-top {
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+.rotate-down {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.rotate-up {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: $four-hundred) {
+  .site-header,
+  .contact {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: $max-body-width) {
+  .site-header,
+  .contact,
+  .burger {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    right: 0;
+  }
+
+  .burger {
+    left: 1100px;
+  }
+}

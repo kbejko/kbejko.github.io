@@ -1,34 +1,34 @@
 //Words
 $base-font-family: 'Noto Sans', sans-serif;
-$base-font-size:   18px;
+$base-font-size:   16px;
+$large-font-size: $base-font-size * 1.25;
 $small-font-size:  $base-font-size * .75;
 $base-line-height: 1.45;
 
 // $spacing-unit:     30px;
 
 //Colors
-$navy:       #000080; // Navy
-$blue:       #4285f4; // Blue
-$white:     #fff;    // White
-$beige:    #f5f5dc; // Beige
-$faint-blue:   rgba(234, 234, 241, 0.5); //Faint Blue
+$navy:  #111d4a; // Navy
+$red:   #92140c; // Red
+$white: #fff8f0; // White
+$beige: #ffcf99; // Beige
+$blue:  #246eb9; // Blue
 
 //Shadows
-$grey-color-light: rgba(0, 0, 0, .14);
-$grey-color-dark:  rgba(0, 0, 0, .28);
-$box-shadow-color-light: 0 0 4px $grey-color-light;
-$box-shadow-color-darker: 0 4px 8px $grey-color-dark;
+$box-shadow-light: 0 0 4px rgba(0, 0, 0, .14);
+$box-shadow-dark: 0 4px 8px rgba(0, 0, 0, .28);
 
 //Transitions
 $link-pop-trans-up: all 0.2s ease-out;
 $link-pop-trans-down: all 0.3s ease-out;
 
-$border-width: 100%;
-$border-margin: 1em 2em;
-$max-body-margin: 1em auto;
-
+// // $border-width: 100%;
+// // $border-margin: 1em 2em;
+// // $max-body-margin: 1em auto;
+//
 //Breakpoints
-$first-bp: 420px;
-$second-bp: 670px;
-$third-bp: 960px;
-$max-body-width: 1200px;
+$three-twenty: 20rem;
+$four-hundred: 25rem;
+$seven-twenty: 45rem;
+$nine-sixty:   60rem;
+$max-body-width: 75rem;
