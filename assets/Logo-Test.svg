@@ -1,4 +1,24 @@
 <?xml version="1.0" standalone="yes"?>
 
-<svg version="1.1" viewBox="0.0 0.0 960.0 720.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="p.0"><path d="m0 0l960.0 0l0 720.0l-960.0 0l0 -720.0z" clip-rule="nonzero"></path></clipPath><g clip-path="url(#p.0)"><path fill="#000000" fill-opacity="0.0" d="m0 0l960.0 0l0 720.0l-960.0 0z" fill-rule="nonzero"></path><path fill="#ffcf99" d="m172.00072 362.76266l0 0c0 -163.0066 133.54604 -295.1496 298.28345 -295.1496l0 0c79.10968 0 154.97925 31.096031 210.91827 86.44732c55.938965 55.351288 87.36517 130.42374 87.36517 208.70227l0 0c0 163.00662 -133.54602 295.14963 -298.28345 295.14963l0 0c-164.73743 0 -298.28345 -132.143 -298.28345 -295.14963z" fill-rule="nonzero"></path><path fill="#246eb9" d="m642.6435 72.833855l0 0c0 -14.011509 12.176453 -25.370079 27.196838 -25.370079l0 0c15.020447 0 27.196838 11.35857 27.196838 25.370079l0 0c0 14.011505 -12.176392 25.370079 -27.196838 25.370079l0 0c-15.020386 0 -27.196838 -11.358574 -27.196838 -25.370079z" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m595.92426 45.294712l-112.86133 263.80984l101.88373 0l-38.385742 89.76572l48.50238 17.52707l-40.25128 14.557495" fill-rule="nonzero"></path><path stroke="#246eb9" stroke-width="16.0" stroke-linejoin="round" stroke-linecap="butt" d="m595.92426 45.294712l-112.86133 263.80984l101.88373 0l-38.385742 89.76572l48.50238 17.52707l-40.25128 14.557495" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m563.50854 433.0456c7.7766724 8.436737 46.076416 32.72052 46.660217 50.62033c0.58380127 17.899841 -35.9646 47.315582 -43.15753 56.778717" fill-rule="nonzero"></path><path stroke="#246eb9" stroke-width="16.0" stroke-linejoin="round" stroke-linecap="butt" d="m563.50854 433.0456c7.7766724 8.436737 46.076416 32.72052 46.660217 50.62033c0.58380127 17.899841 -35.9646 47.315582 -43.15753 56.778717" fill-rule="nonzero"></path></g></svg>
-
+<svg version="1.1" viewBox="0.0 0.0 960.0 720.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <clipPath id="p.0">
+    <path d="m0 0l960.0 0l0 720.0l-960.0 0l0 -720.0z" clip-rule="nonzero">
+    </path>
+  </clipPath>
+  <g clip-path="url(#p.0)">
+    <path fill="#000000" fill-opacity="0.0" d="m0 0l960.0 0l0 720.0l-960.0 0z" fill-rule="nonzero">
+    </path>
+    <path fill="#ffcf99" d="m172.00072 362.76266l0 0c0 -163.0066 133.54604 -295.1496 298.28345 -295.1496l0 0c79.10968 0 154.97925 31.096031 210.91827 86.44732c55.938965 55.351288 87.36517 130.42374 87.36517 208.70227l0 0c0 163.00662 -133.54602 295.14963 -298.28345 295.14963l0 0c-164.73743 0 -298.28345 -132.143 -298.28345 -295.14963z" fill-rule="nonzero">
+    </path>
+    <path id="eye" fill="#246eb9" d="m642.6435 72.833855l0 0c0 -14.011509 12.176453 -25.370079 27.196838 -25.370079l0 0c15.020447 0 27.196838 11.35857 27.196838 25.370079l0 0c0 14.011505 -12.176392 25.370079 -27.196838 25.370079l0 0c-15.020386 0 -27.196838 -11.358574 -27.196838 -25.370079z" fill-rule="nonzero">
+    </path>
+    <path fill="#000000" fill-opacity="0.0" d="m595.92426 45.294712l-112.86133 263.80984l101.88373 0l-38.385742 89.76572l48.50238 17.52707l-40.25128 14.557495" fill-rule="nonzero">
+    </path>
+    <path class="face" stroke="#246eb9" stroke-width="16.0" stroke-linejoin="round" stroke-linecap="butt" d="m595.92426 45.294712l-112.86133 263.80984l101.88373 0l-38.385742 89.76572l48.50238 17.52707l-40.25128 14.557495" fill-rule="nonzero">
+    </path>
+    <path fill="#000000" fill-opacity="0.0" d="m563.50854 433.0456c7.7766724 8.436737 46.076416 32.72052 46.660217 50.62033c0.58380127 17.899841 -35.9646 47.315582 -43.15753 56.778717" fill-rule="nonzero">
+    </path>
+    <path class="face" stroke="#246eb9" stroke-width="16.0" stroke-linejoin="round" stroke-linecap="butt" d="m563.50854 433.0456c7.7766724 8.436737 46.076416 32.72052 46.660217 50.62033c0.58380127 17.899841 -35.9646 47.315582 -43.15753 56.778717" fill-rule="nonzero">
+    </path>
+  </g>
+</svg>

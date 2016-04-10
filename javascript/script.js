@@ -10,16 +10,13 @@
    }
 })();
 
-// Checks current path name and matches it to li class name to add class active
+// Checks current path name(url) and matches it current a's href
 (function underlineCurrentTab(){
-  var navLinks = document.querySelector('.site__nav--links').children
-  var pathName = location.pathname.split('/')[1]
+  var navLinks = document.querySelectorAll('.site__nav--links li a')
+  var pathName = location.pathname
 
   for (var i = 0; i < navLinks.length; i++) {
-    if (pathName === navLinks[i].id) {
-      navLinks[i].classList.add('active')
-    }
-    if (pathName === '' && navLinks[i].id === "home") {
+    if (pathName === navLinks[i].pathname) {
       navLinks[i].classList.add('active')
     }
   }

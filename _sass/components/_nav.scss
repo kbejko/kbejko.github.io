@@ -1,12 +1,14 @@
 .site__nav {
   box-shadow: $box-shadow-light, $box-shadow-dark;
-  position: absolute;
-  width: 100vw;
+  background: $white;
+  font-size: 2em;
   height: 100vh;
-  z-index: 1;
-  top: -100vh;
   left: 0;
+  position: absolute;
   transition: top 0.7s cubic-bezier(0.4, 0, 1, 1);
+  top: -100vh;
+  width: 100vw;
+  z-index: 1;
 
   .site__nav--links {
     align-items: center;
@@ -14,21 +16,45 @@
     flex-flow: column;
     height: 50%;
     justify-content: space-around;
+
+    //Same interaction for link on hover and active class
+    li {
+      line-height: 2;
+    }
+    a:hover, a.active {
+      color: $red;
+      &::after {
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
+    }
+    a::after {
+      content: '';
+      background: $red;
+      display: block;
+      width: 0;
+      height: 3px;
+      position: absolute;
+      left: 50%;
+      transition: 0.3s;
+    }
   }
 
   .site__nav--contact {
+    align-items: center;
+    background: $beige;
+    bottom: 2em;
     display: flex;
-    font-size: 1em;
-    justify-content: center;
-    margin: 1em;
+    height: 4em;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    a:hover {
+      color: $red;
+    }
   }
 
-  li {
-    padding: .5rem;
-  }
-  a:hover {
-    color: $red;
-  }
 }
 
 // Adds visible class to whole nav
@@ -36,14 +62,4 @@
   position: fixed;
   top: 4rem;
   transition: top 1.4s cubic-bezier(0.4, 0, 1, 1);
-}
-
-// Current active link
-.active {
-  border-right: 3px solid $red;
-  a {
-    color: $red;
-    cursor: default;
-    pointer-events: none;
-  }
 }
