@@ -14,7 +14,10 @@
 // }
 
 .main-img {
-  img {
-    max-width: $three-twenty;
-  }
+  opacity: 0;
+  max-width: $three-twenty;
+}
+.blah {
+  opacity: 1;
+  transition: 1s;
 }
