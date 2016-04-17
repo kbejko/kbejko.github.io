@@ -13,10 +13,12 @@
 // Checks current path name(url) and matches it current a's href
 (function underlineCurrentTab(){
   var navLinks = document.querySelectorAll('.site__nav--links li a')
-  var pathName = location.pathname
+  var pathName = location.pathname.split('/')[1]
+  console.log(pathName)
   console.log(navLinks)
+
   for (var i = 0; i < navLinks.length; i++) {
-    if (pathName === navLinks[i].pathname) {
+    if (pathName === navLinks[i].pathname.split('/')[1]) {
       navLinks[i].classList.add('active')
     }
   }
@@ -25,23 +27,53 @@
 (function pageTransition(){
   var navLinks = document.querySelectorAll('.site__nav--links li a')
   var nav = document.querySelector('.site__nav')
-  var img = document.querySelector('.page__content')
+  var pageContent = document.querySelector('.page__content')
 
-  // setTimeout(function(){
-  //   navLinks[1].addEventListener('click', function(){
-  //     nav.removeClass('active')
-  //     console.log('blah')
-  //   }, 3000)
-  // })
-  navLinks[0].addEventListener('click', function(evt){
+  for (var i = 0; i < navLinks.length; i++) {
+    (function(){
+      var hrefRef = navLinks[i].href
+      navLinks[i].addEventListener('click', function(evt){
+        evt.preventDefault()
+        nav.classList.remove('visible')
+        pageContent.classList.remove('show')
+        setTimeout(function() {
+          location.href = hrefRef
+        }, 1000)
 
-    evt.preventDefault()
-    nav.classList.remove('visible')
-    setTimeout(function(){
-      img.classList.add('show')
-    }, 1500)
-  })
+      })
+
+      window.onload = function() {
+        pageContent.classList.add('show')
+      }
+    })();
+  }
 
 })();
+
+(function postTransition(){
+  var postLinks = document.querySelectorAll('.journal__post a')
+  var page = document.querySelector('.page__content')
+  var body = document.querySelector('body')
+
+  for (var i = 0; i < postLinks.length; i++) {
+    (function(){
+      var hrefRef = postLinks[i].href
+      postLinks[i].addEventListener('click', function(evt){
+        evt.preventDefault()
+        page.classList.remove('show')
+        setTimeout(function() {
+          location.href = hrefRef
+        }, 1000)
+
+      })
+
+      window.onload = function() {
+        page.classList.add('show')
+      }
+    })();
+  }
+
+})();
+
 
 console.log('Hire me :)')

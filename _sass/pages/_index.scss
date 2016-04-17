@@ -1,0 +1,24 @@
+.main__img {
+  background: url('../../assets/klajdi2.jpg');
+  opacity: 0;
+  height: calc(100vh - 6rem);
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  &--words {
+    cursor: pointer;
+    font-size: 1em;
+    border: 2px solid $red;
+    padding: .5em;
+    position: absolute;
+    top: 50%;
+    transform: translate(-8%, -50%);
+  }
+  &--words:hover {
+    border-color: $beige;
+  }
+}
+.display {
+  opacity: 1;
+  transition: 1s;
+}

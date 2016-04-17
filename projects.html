@@ -4,20 +4,14 @@ title: Projects
 permalink: /projects/
 ---
 
-  <!-- <div class="projects-container">
-
-    <div class="projects">
+    <ul class="project__list">
       {% for project in site.data.projects %}
-      <div class="outer-projects-container">
-        <a href="{{project.url}}">
-          <div class="inner-projects-container">
-            <img src="{{project.image}}" alt="{{project.alt}}" />
-            <h3>{{project.name}}</h3>
-            <p>{{project.desc}}</p>
-          </div>
-        </a>
-      </div>
+      <a href="{{project.url}}">
+        <li class="project__item">
+          <img class="project__item--image" src="{{project.image}}" alt="{{project.alt}}" />
+          <h2 class="project__item--title">{{project.name}}</h2>
+          <p class="project__item--description">{{project.desc}}</p>
+        </li>
+      </a>
       {% endfor %}
-    </div>
-
-  </div> -->
+    </ul>

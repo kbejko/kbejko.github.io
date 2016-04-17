@@ -1,0 +1,18 @@
+.page__content {
+  padding: 1rem;
+  // box-shadow: $box-shadow-light, $box-shadow-dark;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transition: top 1.5s;
+  max-width: $max-body-width;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.show {
+  top: 4rem;
+  transition: .8s;
+}

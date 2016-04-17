@@ -17,11 +17,9 @@
     background: url('../assets/Logo-Test.svg');
     background-position: center;
     background-size: cover;
+    cursor: pointer;
     height: 3rem;
     width: 3rem;
-    svg:hover {
-      stroke: $red;
-    }
   }
 
   &--name {

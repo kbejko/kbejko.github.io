@@ -3,19 +3,16 @@ layout: default
 title: Journal
 permalink: /journal/
 ---
-<!--
-  <ul class="post-list">
+
+  <ul class="journal__list">
     {% for post in site.posts %}
-    <div class="post-link">
-      <a href="{{ post.url | prepend: site.baseurl }}">
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <h1 class="post-title-link">
+      <li class="journal__post">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <h1 class="journal__post--title">
             {{ post.title }}
           </h1>
-          {{ post.content | strip_html | truncatewords: 3 }}
-        </li>
-      </a>
-    </div>
+          <span class="journal__post--date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </a>
+      </li>
     {% endfor %}
-  </ul> -->
+  </ul>

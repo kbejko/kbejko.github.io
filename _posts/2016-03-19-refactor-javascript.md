@@ -41,7 +41,7 @@ Then I came up with the following code, a loop that iterates over the tabs and c
     if (pathNameStrip === navLinks[i].className) {
       navLinks[i].classList.add('active')
     }
-    if (pathNameStrip === '' && navLinks[i].className === 'home') {
+    if (pathNameStrip === ' ' && navLinks[i].className === 'home') {
       navLinks[i].classList.add('active')
     }
   }

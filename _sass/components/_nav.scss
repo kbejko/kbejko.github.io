@@ -1,7 +1,7 @@
 .site__nav {
   box-shadow: $box-shadow-light, $box-shadow-dark;
   background: $white;
-  font-size: 2em;
+  font-size: 1em;
   height: 100vh;
   left: 0;
   position: absolute;
@@ -44,7 +44,7 @@
   .site__nav--contact {
     align-items: center;
     background: $beige;
-    bottom: 2em;
+    bottom: 4em;
     display: flex;
     height: 4em;
     justify-content: space-around;

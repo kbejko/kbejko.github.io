@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
 }
-html,
+
 body {
   background-color: $white;
   color: $navy;
   font-family: $base-font-family;
   font-size: $base-font-size;
+  line-height: $base-line-height;
 }
 
 a {
@@ -15,20 +16,22 @@ a {
 }
 
 
-pre,
-code {
-  background-color: $beige;
-}
+// pre,
+// code {
+//   background-color: $beige;
+// }
 
 code {
   padding: 1px 5px;
 }
 
 pre {
-  border: 1px solid $navy;
+  border-left: .25rem solid $red;
+  font-family: monospace;
   font-size: $small-font-size;
   overflow-x: scroll;
   padding: 1rem;
+  margin: 1rem auto;
 
   > code {
     border: 0;
@@ -36,7 +39,7 @@ pre {
     padding-right: 0;
     }
 
-    @media (min-width: $nine-sixty) {
+    @media (min-width: $four-hundred) {
       font-size: $base-font-size;
     }
 }

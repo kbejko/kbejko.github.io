@@ -1,0 +1,28 @@
+.post {
+  max-width: $four-hundred;
+  margin: 0 auto;
+  &__header {
+    margin-bottom: 1em;
+    padding: .5em;
+    &::after {
+      content: '';
+      background: $red;
+      display: block;
+      height: 3px;
+      left: .5em;
+      right: .5em;
+      position: absolute;
+    }
+    &--title {
+      font-size: 1.4em;
+    }
+    &--meta {
+      font-size: .8em;
+      margin: .5em 0 1em;
+    }
+  }
+  @media (min-width: $seven-twenty) {
+    max-width: $seven-twenty;
+    font-size: 2em;
+  }
+}
