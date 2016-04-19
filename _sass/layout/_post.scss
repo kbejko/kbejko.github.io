@@ -3,7 +3,7 @@
   margin: 0 auto;
   &__header {
     margin-bottom: 1em;
-    padding: .5em;
+    padding: .5em 0;
     &::after {
       content: '';
       background: $red;
@@ -23,6 +23,6 @@
   }
   @media (min-width: $seven-twenty) {
     max-width: $seven-twenty;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }

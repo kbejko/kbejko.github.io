@@ -1,13 +1,10 @@
 ---
 ---
 @charset "utf-8";
-@font-face {
-  font-family: Aileron-Semibold;
-  src: url(../fonts/aileron/Aileron-Semibold.otf);
-}
+
 @font-face {
   font-family: Aileron-Regular;
-  src: url(../fonts/aileron/Aileron-Regular.otf);
+  src: url(../fonts/Aileron-Regular.otf);
 }
 
 
@@ -17,13 +14,11 @@
 @import 'base/syntax-highlighting';
 @import 'base/base';
 
-@import 'components/icons';
 @import 'components/header';
 @import 'components/nav';
 
 @import 'layout/default';
 @import 'layout/post';
-
 
 @import 'pages/index';
 @import 'pages/journal';

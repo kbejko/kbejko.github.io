@@ -2,7 +2,7 @@
   padding: 1rem;
   // box-shadow: $box-shadow-light, $box-shadow-dark;
   position: absolute;
-  top: -100%;
+  top: 4rem;
   left: 0;
   right: 0;
   z-index: -1;
@@ -12,7 +12,7 @@
   overflow-x: hidden;
 }
 
-.show {
-  top: 4rem;
-  transition: .8s;
-}
+// .show {
+//   top: 4rem;
+//   transition: .8s;
+// }

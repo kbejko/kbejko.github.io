@@ -14,8 +14,6 @@
 (function underlineCurrentTab(){
   var navLinks = document.querySelectorAll('.site__nav--links li a')
   var pathName = location.pathname.split('/')[1]
-  console.log(pathName)
-  console.log(navLinks)
 
   for (var i = 0; i < navLinks.length; i++) {
     if (pathName === navLinks[i].pathname.split('/')[1]) {
@@ -24,56 +22,56 @@
   }
 })();
 
-(function pageTransition(){
-  var navLinks = document.querySelectorAll('.site__nav--links li a')
-  var nav = document.querySelector('.site__nav')
-  var pageContent = document.querySelector('.page__content')
-
-  for (var i = 0; i < navLinks.length; i++) {
-    (function(){
-      var hrefRef = navLinks[i].href
-      navLinks[i].addEventListener('click', function(evt){
-        evt.preventDefault()
-        nav.classList.remove('visible')
-        pageContent.classList.remove('show')
-        setTimeout(function() {
-          location.href = hrefRef
-        }, 1000)
-
-      })
-
-      window.onload = function() {
-        pageContent.classList.add('show')
-      }
-    })();
-  }
-
-})();
-
-(function postTransition(){
-  var postLinks = document.querySelectorAll('.journal__post a')
-  var page = document.querySelector('.page__content')
-  var body = document.querySelector('body')
-
-  for (var i = 0; i < postLinks.length; i++) {
-    (function(){
-      var hrefRef = postLinks[i].href
-      postLinks[i].addEventListener('click', function(evt){
-        evt.preventDefault()
-        page.classList.remove('show')
-        setTimeout(function() {
-          location.href = hrefRef
-        }, 1000)
-
-      })
-
-      window.onload = function() {
-        page.classList.add('show')
-      }
-    })();
-  }
-
-})();
+// (function pageTransition(){
+//   var navLinks = document.querySelectorAll('.site__nav--links li a')
+//   var nav = document.querySelector('.site__nav')
+//   var pageContent = document.querySelector('.page__content')
+//
+//   for (var i = 0; i < navLinks.length; i++) {
+//     (function(){
+//       var hrefRef = navLinks[i].href
+//       navLinks[i].addEventListener('click', function(evt){
+//         evt.preventDefault()
+//         nav.classList.remove('visible')
+//         pageContent.classList.remove('show')
+//         setTimeout(function() {
+//           location.href = hrefRef
+//         }, 1000)
+//
+//       })
+//
+//       window.onload = function() {
+//         pageContent.classList.add('show')
+//       }
+//     })();
+//   }
+//
+// })();
+//
+// (function postTransition(){
+//   var postLinks = document.querySelectorAll('.journal__post a')
+//   var page = document.querySelector('.page__content')
+//   var body = document.querySelector('body')
+//
+//   for (var i = 0; i < postLinks.length; i++) {
+//     (function(){
+//       var hrefRef = postLinks[i].href
+//       postLinks[i].addEventListener('click', function(evt){
+//         evt.preventDefault()
+//         page.classList.remove('show')
+//         setTimeout(function() {
+//           location.href = hrefRef
+//         }, 1000)
+//
+//       })
+//
+//       window.onload = function() {
+//         page.classList.add('show')
+//       }
+//     })();
+//   }
+//
+// })();
 
 
 console.log('Hire me :)')
