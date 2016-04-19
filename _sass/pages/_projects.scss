@@ -1,7 +1,14 @@
 .project__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 .project__item {
   box-shadow: $box-shadow-light, $box-shadow-dark;
@@ -27,6 +34,7 @@
   }
   &:hover {
     box-shadow: $box-shadow-light;
+    -webkit-transition: .5s;
     transition: .5s;
   }
 }

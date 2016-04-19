@@ -1,12 +1,9 @@
 //Words
 $base-font-family: 'Aileron-Regular', sans-serif;
-$header-font-family: 'Aileron-Semibold', sans-serif;
 $base-font-size:   16px;
 $large-font-size: $base-font-size * 1.25;
 $small-font-size:  $base-font-size * .75;
 $base-line-height: 1.45;
-
-// $spacing-unit:     30px;
 
 //Colors
 $navy:  #111d4a; // Navy
@@ -23,10 +20,6 @@ $box-shadow-dark: 0 4px 8px rgba(0, 0, 0, .28);
 $link-pop-trans-up: all 0.2s ease-out;
 $link-pop-trans-down: all 0.3s ease-out;
 
-// // $border-width: 100%;
-// // $border-margin: 1em 2em;
-// // $max-body-margin: 1em auto;
-//
 //Breakpoints
 $three-twenty: 20rem;   //320px
 $four-hundred: 25rem;   //400px
