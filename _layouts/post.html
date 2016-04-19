@@ -10,3 +10,9 @@ layout: default
   <article class="post post__content">
     {{ content }}
   </article>
+
+  <footer class="post post__footer">
+    {% if page.next.url %}
+    <a href="{{page.previous.url}}">Next:  {{page.next.title}}</a>
+    {% endif %}
+  </footer>

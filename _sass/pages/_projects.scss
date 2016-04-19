@@ -13,8 +13,8 @@
 .project__item {
   box-shadow: $box-shadow-light, $box-shadow-dark;
   padding: 1rem;
-  height: 25rem;
-  width: 15rem;
+  height: 30rem;
+  width: 18rem;
   margin-bottom: 2rem;
   text-align: center;
   &--image {
@@ -29,12 +29,23 @@
     border-bottom: 1px solid $red;
     padding-bottom: .5em;
   }
-  &--description {
-    font-size: 1em;
+  &--date {
+    font-size: .75em;
   }
+  &--description {
+    color: $navy;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    height: 35%;
+    overflow-y: scroll;
+    text-align: left;
+  }
+
   &:hover {
     box-shadow: $box-shadow-light;
     -webkit-transition: .5s;
     transition: .5s;
   }
+
 }
