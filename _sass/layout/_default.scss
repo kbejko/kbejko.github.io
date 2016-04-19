@@ -1,0 +1,14 @@
+.page__content {
+  padding: 1rem;
+  /* box-shadow: $box-shadow-light, $box-shadow-dark;*/
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transition: top 1.5s;
+  transition: top 1.5s;
+  max-width: $max-body-width;
+  margin: 0 auto;
+  overflow-x: hidden;
+}

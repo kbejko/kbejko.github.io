@@ -1,0 +1,51 @@
+.project__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.project__item {
+  box-shadow: $box-shadow-light, $box-shadow-dark;
+  padding: 1rem;
+  height: 30rem;
+  width: 18rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  &--image {
+    width: 100%;
+    height: 35%;
+    margin-bottom: .5em;
+    padding: 1em;
+  }
+  &--title {
+    font-size: 1.4em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid $red;
+    padding-bottom: .5em;
+  }
+  &--date {
+    font-size: .75em;
+  }
+  &--description {
+    color: $navy;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    height: 35%;
+    overflow-y: scroll;
+    text-align: left;
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-light;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+
+}

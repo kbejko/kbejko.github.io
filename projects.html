@@ -1,0 +1,19 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+    <ul class="project__list">
+      {% for project in site.projects %}
+      <li class="project__item">
+        <a href="{{project.url}}">
+          <img class="project__item--image" src="{{project.image}}" alt="{{project.name}}" />
+          <h2 class="project__item--title">{{project.name}}</h2>
+          <p class="project__item--date">{{project.date | date: "%b %-d, %Y" }}</p>
+          <div class="project__item--description">{{project.content}}</div>
+        </a>
+        <a href="{{project.github}}">Code on GitHub</a>
+      </li>
+      {% endfor %}
+    </ul>

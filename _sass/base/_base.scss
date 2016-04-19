@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+  color: $navy;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  border-left: .25rem solid $red;
+  font-family: monospace;
+  font-size: $small-font-size;
+  overflow-x: scroll;
+  padding: 1rem;
+  margin: 1rem auto;
+
+  > code {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+    }
+
+    @media (min-width: $four-hundred) {
+      font-size: $base-font-size;
+    }
+}

@@ -1,0 +1,41 @@
+.main__img {
+  background: url('../../assets/klajdi_med.jpg');
+  height: calc(100vh - 6rem);
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  -webkit-animation: fade 1s ease;
+          animation: fade 1s ease;
+  &--words {
+    cursor: pointer;
+    font-size: 1em;
+    border: 2px solid $red;
+    padding: .5em;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-8%, -50%);
+            transform: translate(-8%, -50%);
+  }
+
+  @media (min-width: $max-body-width) {
+    background: url('../../assets/klajdi_lrg.jpg');
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

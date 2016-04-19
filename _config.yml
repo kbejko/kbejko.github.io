@@ -8,6 +8,7 @@ permalink: /journal/:title
 twitter_username: klazhdi
 github_username:  kbejko
 
-# Build settings
-
-# highlighter: rouge
+collections:
+  projects:
+    output: true
+    permalink: /:path

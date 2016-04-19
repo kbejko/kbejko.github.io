@@ -1,0 +1,28 @@
+//Words
+$base-font-family: 'Aileron-Regular', sans-serif;
+$base-font-size:   16px;
+$large-font-size: $base-font-size * 1.25;
+$small-font-size:  $base-font-size * .75;
+$base-line-height: 1.45;
+
+//Colors
+$navy:  #111d4a; // Navy
+$red:   #92140c; // Red
+$white: #fff8f0; // White
+$beige: #ffcf99; // Beige
+$blue:  #246eb9; // Blue
+
+//Shadows
+$box-shadow-light: 0 0 4px rgba(0, 0, 0, .14);
+$box-shadow-dark: 0 4px 8px rgba(0, 0, 0, .28);
+
+//Transitions
+$link-pop-trans-up: all 0.2s ease-out;
+$link-pop-trans-down: all 0.3s ease-out;
+
+//Breakpoints
+$three-twenty: 20rem;   //320px
+$four-hundred: 25rem;   //400px
+$seven-twenty: 45rem;   //720px
+$nine-sixty:   60rem;   //960px
+$max-body-width: 75rem; //1200px

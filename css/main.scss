@@ -1,15 +1,25 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "reset",
-        "vars",
-        "base",
-        "syntax-highlighting",
-        "sections/content",
-        "sections/header",
-        "pages/about",
-        "pages/journal",
-        "pages/resources"
-;
+@charset "utf-8";
+
+@font-face {
+  font-family: Aileron-Regular;
+  src: url(../fonts/Aileron-Regular.otf);
+}
+
+
+@import 'abstracts/vars';
+
+@import 'base/reset';
+@import 'base/syntax-highlighting';
+@import 'base/base';
+
+@import 'components/header';
+@import 'components/nav';
+
+@import 'layout/default';
+@import 'layout/post';
+
+@import 'pages/index';
+@import 'pages/journal';
+@import 'pages/projects';

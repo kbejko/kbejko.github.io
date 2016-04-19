@@ -1,0 +1,86 @@
+.site__nav {
+  box-shadow: $box-shadow-light, $box-shadow-dark;
+  background: $white;
+  font-size: 1em;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  -webkit-transition: top 0.7s cubic-bezier(0.82, 0.04, 1, 0.68);
+  transition: top 0.7s cubic-bezier(0.82, 0.04, 1, 0.68);
+  top: -100vh;
+  width: 100vw;
+  z-index: 1;
+
+  .site__nav--links {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 50%;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+
+    /*Same interaction for link on hover and active class*/
+    li {
+      line-height: 2;
+    }
+    a:hover, a.active {
+      color: $red;
+      &::after {
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
+    }
+    a::after {
+      content: '';
+      background: $red;
+      display: block;
+      width: 0;
+      height: 3px;
+      position: absolute;
+      left: 50%;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+  }
+
+  .site__nav--contact {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: $beige;
+    bottom: 4em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 4em;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    a:hover {
+      color: $red;
+    }
+  }
+
+}
+
+/* Adds visible class to whole nav*/
+.visible {
+  position: fixed;
+  top: 4rem;
+  -webkit-transition: top 0.9s cubic-bezier(0.2, 0.26, 0.91, 0.2);
+  transition: top 0.9s cubic-bezier(0.2, 0.26, 0.91, 0.2);
+}
