@@ -23,7 +23,7 @@ code {
   padding: 1px 5px;
 }
 
-pre {
+.highlight {
   border-left: .25rem solid $red;
   font-family: monospace;
   font-size: $small-font-size;
@@ -31,13 +31,7 @@ pre {
   padding: 1rem;
   margin: 1rem auto;
 
-  > code {
-    border: 0;
-    padding-left: 0;
-    padding-right: 0;
-    }
-
-    @media (min-width: $four-hundred) {
-      font-size: $base-font-size;
-    }
+  @media (min-width: $four-hundred) {
+    font-size: $base-font-size;
+  }
 }

@@ -12,7 +12,7 @@ layout: default
   </article>
 
   <footer class="post post__footer">
-    {% if page.next.url %}
-    <a href="{{page.previous.url}}">Next:  {{page.next.title}}</a>
+    {% if page.previous.url %}
+    <a href="{{page.previous.url}}">Next:  {{page.previous.title}}</a>
     {% endif %}
   </footer>

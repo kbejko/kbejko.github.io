@@ -19,6 +19,9 @@
 
   @media (min-width: $max-body-width) {
     background: url('../../assets/klajdi_lrg.jpg');
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
   }
 }
 
