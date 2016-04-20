@@ -6,4 +6,4 @@ image: ../assets/projects/moonrise-kingdom.jpg
 github: https://github.com/kbejko/moonrise-kingdom
 ---
 
-Birthday card I made for my father with a picture of his dog. One of the first projects I worked with animation. As you'll notice it's very rough, but it was a good intro into css animations.
+The first project I build using HTML and CSS. This was an exercise from General Assembly's curriculum.

@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
     <ul class="project__list">
-      {% for project in site.projects %}
+      {% for project in site.projects reversed %}
       <li class="project__item">
         <a href="{{project.url}}">
           <img class="project__item--image" src="{{project.image}}" alt="{{project.name}}" />
