@@ -41,6 +41,10 @@
     overflow-y: scroll;
     text-align: left;
   }
+  &--github {
+    border-bottom: 1px solid $red;
+    padding: 0 1em .25em;
+  }
 
   &:hover {
     box-shadow: $box-shadow-light;

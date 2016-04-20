@@ -13,7 +13,7 @@ permalink: /projects/
           <p class="project__item--date">{{project.date | date: "%b %-d, %Y" }}</p>
           <div class="project__item--description">{{project.content}}</div>
         </a>
-        <a href="{{project.github}}">Code on GitHub</a>
+        <a class="project__item--github" href="{{project.github}}">Code on GitHub</a>
       </li>
       {% endfor %}
     </ul>
