@@ -33,8 +33,9 @@
     font-size: .75em;
   }
   &--description {
+    box-shadow: inset $box-shadow-light;
     color: $navy;
-    padding-left: 1em;
+    padding: .25em 1em;
     margin-bottom: 1em;
     font-size: 1em;
     height: 35%;
