@@ -74,4 +74,4 @@
 // })();
 
 
-console.log('Hire me :)')
+console.log(':)')

@@ -1,12 +1,14 @@
 # Site settings
 title: Klajdi Bejko
 email: kbejko@gmail.com
-description: Thoughts on learning web development
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://kbejko.github.io" # the base hostname & protocol for your site
+description: Blog about web development, random stuff related to food or drink and to showcase work
+baseurl: ""
+url: "https://kbejko.github.io"
 permalink: /journal/:title
 twitter_username: klazhdi
 github_username:  kbejko
+
+exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 collections:
   projects:

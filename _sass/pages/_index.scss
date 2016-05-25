@@ -1,5 +1,5 @@
 .main__img {
-  background: url('../../assets/klajdi_med.jpg');
+  background: url('../assets/img/klajdi_med.jpg');
   height: calc(100vh - 6rem);
   background-size: cover;
   background-position: 50% 0;
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $max-body-width) {
-    background: url('../../assets/klajdi_lrg.jpg');
+    background: url('../assets/img/klajdi_lrg.jpg');
     background-size: cover;
     background-position: 50% 0;
     background-repeat: no-repeat;

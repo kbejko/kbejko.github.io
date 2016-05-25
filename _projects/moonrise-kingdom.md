@@ -2,7 +2,7 @@
 layout: default
 name: Moonrise Kingdom
 date: 2015-12-1
-image: ../assets/projects/moonrise-kingdom.jpg
+image: ../assets/img/projects/moonrise-kingdom.jpg
 github: https://github.com/kbejko/moonrise-kingdom
 ---
 

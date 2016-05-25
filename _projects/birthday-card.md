@@ -2,7 +2,7 @@
 layout: default
 name: Birthday Card
 date: 2016-02-23
-image: ../assets/projects/birthday-card-ss.jpg
+image: ../assets/img/projects/birthday-card-ss.jpg
 github: https://github.com/kbejko/birthday-card
 ---
 

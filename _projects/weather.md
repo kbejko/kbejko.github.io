@@ -2,7 +2,7 @@
 layout: default
 name: Weather
 date: 2016-03-31
-image: ../assets/projects/weather.jpg
+image: ../assets/img/projects/weather.jpg
 github: https://github.com/kbejko/weather
 ---
 
