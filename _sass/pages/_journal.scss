@@ -12,7 +12,8 @@
     color: $navy;
     font-size: .75em;
   }
-  a:visited {
+  a:visited,
+  a:hover {
     color: $red;
   }
 }

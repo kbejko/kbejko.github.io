@@ -53,6 +53,9 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
+/*
+Image min
+*/
 gulp.task('imagemin', function() {
   return gulp.src('assets/img/*')
       .pipe(imagemin())

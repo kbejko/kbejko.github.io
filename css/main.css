@@ -444,7 +444,6 @@ code {
 
 .page__content {
   padding: 1rem;
-  /* box-shadow: $box-shadow-light, $box-shadow-dark;*/
   position: absolute;
   top: 4rem;
   left: 0;
@@ -533,7 +532,8 @@ code {
   .journal__post--date {
     color: #111d4a;
     font-size: .75em; }
-  .journal__post a:visited {
+  .journal__post a:visited,
+  .journal__post a:hover {
     color: #92140c; }
 
 .project__list {

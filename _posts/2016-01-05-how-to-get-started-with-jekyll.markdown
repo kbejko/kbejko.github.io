@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to get started with Jekyll"
-date:   2015-09-05 10:56:25
+date:   2016-01-05 
 categories: jekyll update
 ---
 

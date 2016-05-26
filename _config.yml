@@ -7,6 +7,7 @@ url: "https://kbejko.github.io"
 permalink: /journal/:title
 twitter_username: klazhdi
 github_username:  kbejko
+# permalink: pretty
 
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 

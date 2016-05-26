@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll Posts in Markdown"
-date: 2015-09-06
+date: 2016-01-06
 categories: jekyll update
 ---
 
@@ -20,4 +20,4 @@ categories: jekyll update
 ---
 {% endhighlight %}
 
-Front matter makes jekyll process the file. In this case it says to use the post layout, the given title, the date created, and categorizes it under what is specified.
+Front matter makes Jekyll process the file. In this case it says to use the post layout, the given title, the date created, and categorizes it under what is specified.

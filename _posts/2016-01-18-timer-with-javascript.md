@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Timer with JavaScript"
-date: 2015-10-18
+date: 2016-01-18
 categories: jekyll update
 ---
 
