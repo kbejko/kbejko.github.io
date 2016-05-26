@@ -4,7 +4,7 @@
       -ms-flex-align: center;
           align-items: center;
   background: $white;
-  box-shadow: $box-shadow-light, $box-shadow-dark;
+  // box-shadow: $box-shadow-light, $box-shadow-dark;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,6 +17,7 @@
   position: fixed;
   right: 0;
   z-index: 2;
+  transition: box-shadow .4s;
 
   &--logo {
     background: url('../assets/img/klajdi.svg');
@@ -25,6 +26,31 @@
     cursor: pointer;
     height: 3rem;
     width: 3rem;
+
+    transform: translateY(0);
+    transition: transform 1s;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      height: 2px;
+      width: 75%;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.28);
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.1);
+      transform: translate(-50%, 0);
+      transition: transform 1s;
+    }
+    &:hover {
+      transform: translateY(-.5rem);
+      transition: transform 1s;
+    }
+    &:hover::after {
+      transform: translate(-50%, .5rem) scale(0.50);
+      transition: transform 1s;
+    }
   }
 
   &--name {

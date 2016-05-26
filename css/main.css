@@ -291,8 +291,6 @@ code {
   -ms-flex-align: center;
   align-items: center;
   background: #fff8f0;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -304,14 +302,61 @@ code {
   left: 0;
   position: fixed;
   right: 0;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-transition: -webkit-box-shadow .4s;
+  transition: -webkit-box-shadow .4s;
+  transition: box-shadow .4s;
+  transition: box-shadow .4s, -webkit-box-shadow .4s; }
   .site__header--logo {
     background: url("../assets/img/klajdi.svg");
     background-position: center;
     background-size: cover;
     cursor: pointer;
     height: 3rem;
-    width: 3rem; }
+    width: 3rem;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s; }
+    .site__header--logo::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      height: 2px;
+      width: 75%;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.28);
+              box-shadow: 0 1px 6px rgba(0, 0, 0, 0.28);
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.1);
+      -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      -webkit-transition: -webkit-transform 1s;
+      transition: -webkit-transform 1s;
+      transition: transform 1s;
+      transition: transform 1s, -webkit-transform 1s; }
+    .site__header--logo:hover {
+      -webkit-transform: translateY(-0.5rem);
+          -ms-transform: translateY(-0.5rem);
+              transform: translateY(-0.5rem);
+      -webkit-transition: -webkit-transform 1s;
+      transition: -webkit-transform 1s;
+      transition: transform 1s;
+      transition: transform 1s, -webkit-transform 1s; }
+    .site__header--logo:hover::after {
+      -webkit-transform: translate(-50%, 0.5rem) scale(0.5);
+          -ms-transform: translate(-50%, 0.5rem) scale(0.5);
+              transform: translate(-50%, 0.5rem) scale(0.5);
+      -webkit-transition: -webkit-transform 1s;
+      transition: -webkit-transform 1s;
+      transition: transform 1s;
+      transition: transform 1s, -webkit-transform 1s; }
   .site__header--name {
     font-size: 1em;
     color: #111d4a; }
@@ -343,15 +388,13 @@ code {
         transform: rotate(-45deg); }
 
 .site__nav {
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   background: #fff8f0;
   font-size: 1em;
   height: 100vh;
   left: 0;
   position: absolute;
-  -webkit-transition: top 0.6s cubic-bezier(0.82, 0.04, 1, 0.68);
-  transition: top 0.6s cubic-bezier(0.82, 0.04, 1, 0.68);
+  -webkit-transition: top 0.5s cubic-bezier(0.82, 0.04, 1, 0.68);
+  transition: top 0.5s cubic-bezier(0.82, 0.04, 1, 0.68);
   top: -100vh;
   width: 100vw;
   z-index: 1; }
@@ -390,12 +433,13 @@ code {
       left: 50%;
       -webkit-transition: 0.3s;
       transition: 0.3s; }
-    .site__nav--links a:hover {
-      color: #92140c; }
-      .site__nav--links a:hover::after {
-        left: 0;
-        right: 0;
-        width: 100%; }
+    @media (min-width: 800px) {
+      .site__nav--links a:hover {
+        color: #92140c; }
+        .site__nav--links a:hover::after {
+          left: 0;
+          right: 0;
+          width: 100%; } }
     .site__nav--links a::after {
       content: '';
       background: #92140c;
@@ -422,10 +466,11 @@ code {
     justify-content: space-around;
     position: absolute;
     width: 100%; }
-    .site__nav--contact a:hover {
-      color: #92140c; }
-      .site__nav--contact a:hover::after {
-        width: 105%; }
+    @media (min-width: 800px) {
+      .site__nav--contact a:hover {
+        color: #92140c; }
+        .site__nav--contact a:hover::after {
+          width: 105%; } }
     .site__nav--contact a::after {
       content: '';
       background: #92140c;
@@ -439,8 +484,8 @@ code {
 .visible {
   position: fixed;
   top: 4rem;
-  -webkit-transition: top 0.6s cubic-bezier(0.2, 0.26, 0.91, 0.2);
-  transition: top 0.6s cubic-bezier(0.2, 0.26, 0.91, 0.2); }
+  -webkit-transition: top 0.5s cubic-bezier(0.2, 0.26, 0.91, 0.2);
+  transition: top 0.5s cubic-bezier(0.2, 0.26, 0.91, 0.2); }
 
 .page__content {
   padding: 1rem;
@@ -549,8 +594,12 @@ code {
   flex-flow: row wrap; }
 
 .project__item {
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
   padding: 1rem;
   height: 30rem;
   width: 18rem;
@@ -582,7 +631,9 @@ code {
     border-bottom: 1px solid #92140c;
     padding: 0 1em .25em; }
   .project__item:hover {
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
-    -webkit-transition: .5s;
-    transition: .5s; }
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s, -webkit-box-shadow .5s; }

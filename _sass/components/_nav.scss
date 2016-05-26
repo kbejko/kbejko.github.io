@@ -1,12 +1,11 @@
 .site__nav {
-  box-shadow: $box-shadow-light, $box-shadow-dark;
+  // box-shadow: $box-shadow-light, $box-shadow-dark;
   background: $white;
   font-size: 1em;
   height: 100vh;
   left: 0;
   position: absolute;
-  -webkit-transition: top 0.6s cubic-bezier(0.82, 0.04, 1, 0.68);
-  transition: top 0.6s cubic-bezier(0.82, 0.04, 1, 0.68);
+  transition: top 0.5s cubic-bezier(0.82, 0.04, 1, 0.68);
   top: -100vh;
   width: 100vw;
   z-index: 1;
@@ -52,12 +51,15 @@
       transition: 0.3s;
     }
 
-    a:hover {
-      color: $red;
-      &::after {
-        left: 0;
-        right: 0;
-        width: 100%;
+    // Have to add these because on mobile, link must be clicked twice to go
+    @media (min-width: 800px) {
+      a:hover {
+        color: $red;
+        &::after {
+          left: 0;
+          right: 0;
+          width: 100%;
+        }
       }
     }
     a::after {
@@ -78,7 +80,6 @@
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    // background: $beige;
     bottom: 4em;
     display: -webkit-box;
     display: -webkit-flex;
@@ -91,11 +92,12 @@
     position: absolute;
     width: 100%;
 
-
-    a:hover {
-      color: $red;
-      &::after {
-        width: 105%;
+    @media (min-width: 800px) {
+      a:hover {
+        color: $red;
+        &::after {
+          width: 105%;
+        }
       }
     }
     a::after {
@@ -114,6 +116,5 @@
 .visible {
   position: fixed;
   top: 4rem;
-  -webkit-transition: top 0.6s cubic-bezier(0.2, 0.26, 0.91, 0.2);
-  transition: top 0.6s cubic-bezier(0.2, 0.26, 0.91, 0.2);
+  transition: top 0.5s cubic-bezier(0.2, 0.26, 0.91, 0.2);
 }
