@@ -390,23 +390,22 @@ code {
       left: 50%;
       -webkit-transition: 0.3s;
       transition: 0.3s; }
-    @media (min-width: 60rem) {
-      .site__nav--links a:hover {
-        color: #92140c; }
-        .site__nav--links a:hover::after {
-          left: 0;
-          right: 0;
-          width: 100%; }
-      .site__nav--links a::after {
-        content: '';
-        background: #92140c;
-        display: block;
-        width: 0;
-        height: 3px;
-        position: absolute;
-        left: 50%;
-        -webkit-transition: 0.3s;
-        transition: 0.3s; } }
+    .site__nav--links a:hover {
+      color: #92140c; }
+      .site__nav--links a:hover::after {
+        left: 0;
+        right: 0;
+        width: 100%; }
+    .site__nav--links a::after {
+      content: '';
+      background: #92140c;
+      display: block;
+      width: 0;
+      height: 3px;
+      position: absolute;
+      left: 50%;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
   .site__nav--contact {
     -webkit-box-align: baseline;
     -webkit-align-items: baseline;
@@ -423,19 +422,18 @@ code {
     justify-content: space-around;
     position: absolute;
     width: 100%; }
-    @media (min-width: 60rem) {
-      .site__nav--contact a:hover {
-        color: #92140c; }
-        .site__nav--contact a:hover::after {
-          width: 105%; }
-      .site__nav--contact a::after {
-        content: '';
-        background: #92140c;
-        display: block;
-        width: 0;
-        height: 3px;
-        -webkit-transition: 0.3s;
-        transition: 0.3s; } }
+    .site__nav--contact a:hover {
+      color: #92140c; }
+      .site__nav--contact a:hover::after {
+        width: 105%; }
+    .site__nav--contact a::after {
+      content: '';
+      background: #92140c;
+      display: block;
+      width: 0;
+      height: 3px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
 
 /* Adds visible class to whole nav*/
 .visible {

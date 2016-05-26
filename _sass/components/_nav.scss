@@ -52,26 +52,24 @@
       transition: 0.3s;
     }
 
-    @media (min-width: $nine-sixty) {
-      a:hover {
-        color: $red;
-        &::after {
-          left: 0;
-          right: 0;
-          width: 100%;
-        }
+    a:hover {
+      color: $red;
+      &::after {
+        left: 0;
+        right: 0;
+        width: 100%;
       }
-      a::after {
-        content: '';
-        background: $red;
-        display: block;
-        width: 0;
-        height: 3px;
-        position: absolute;
-        left: 50%;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-      }
+    }
+    a::after {
+      content: '';
+      background: $red;
+      display: block;
+      width: 0;
+      height: 3px;
+      position: absolute;
+      left: 50%;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
     }
   }
 
@@ -93,25 +91,23 @@
     position: absolute;
     width: 100%;
 
-    @media (min-width: $nine-sixty) {
-      a:hover {
-        color: $red;
-        &::after {
-          width: 105%;
-        }
-      }
-      a::after {
-        content: '';
-        background: $red;
-        display: block;
-        width: 0;
-        height: 3px;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
+
+    a:hover {
+      color: $red;
+      &::after {
+        width: 105%;
       }
     }
+    a::after {
+      content: '';
+      background: $red;
+      display: block;
+      width: 0;
+      height: 3px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
   }
-
 }
 
 /* Adds visible class to whole nav*/
