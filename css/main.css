@@ -262,6 +262,8 @@ body {
 a {
   color: #246eb9;
   text-decoration: none; }
+  a:hover {
+    color: #92140c; }
 
 p {
   margin-bottom: 1em; }
