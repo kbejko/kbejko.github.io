@@ -20,7 +20,7 @@
   transition: box-shadow .4s;
 
   &--logo {
-    background: url('../assets/img/klajdi.svg');
+    background: url('../assets/img/Logo.svg');
     background-position: center;
     background-size: cover;
     cursor: pointer;
@@ -36,7 +36,7 @@
       bottom: -2px;
       left: 50%;
       height: 2px;
-      width: 75%;
+      width: 50%;
       box-shadow: 0 1px 6px rgba(0,0,0,0.28);
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.1);
