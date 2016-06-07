@@ -483,9 +483,7 @@ code {
 /* Adds visible class to whole nav*/
 .visible {
   position: fixed;
-  top: 4rem;
-  -webkit-transition: top 0.5s ease-out-in;
-  transition: top 0.5s ease-out-in; }
+  top: 4rem; }
 
 .page__content {
   padding: 1rem;
