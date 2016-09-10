@@ -1,11 +1,7 @@
-(function rotateHamburger(){
-   var burger = document.querySelector('#burger')
-   var first = document.querySelector('.line-top')
-   var second = document.querySelector('.line-bottom')
+(function openNav(){
+   var burger = document.querySelector('#menu')
    var nav = document.querySelector('.site__nav')
    burger.onclick = function() {
-     first.classList.toggle('rotate-down')
-     second.classList.toggle('rotate-up')
      nav.classList.toggle('visible')
    }
 })();
@@ -23,16 +19,16 @@
 })();
 
 // Add shadow to site header on scroll
-(function boxShadow(){
-  var header = document.querySelectorAll('.site__header')
-  window.onscroll = function(){
-    if (document.body.scrollTop > 16) {
-      header[0].style.boxShadow = '0 0 4px rgba(0, 0, 0, .28)'
-    } else {
-      header[0].style.boxShadow = 'none'
-    }
-  }
-})();
+// (function boxShadow(){
+//   var header = document.querySelectorAll('.site__header')
+//   window.onscroll = function(){
+//     if (document.body.scrollTop > 16) {
+//       header[0].style.boxShadow = '0 0 4px rgba(0, 0, 0, .28)'
+//     } else {
+//       header[0].style.boxShadow = 'none'
+//     }
+//   }
+// })();
 
 
 

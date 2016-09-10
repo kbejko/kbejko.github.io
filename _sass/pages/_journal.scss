@@ -1,19 +1,12 @@
 .journal__list {
   max-width: $four-hundred;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .journal__post {
-  padding: 1em;
-  border-bottom: 1px solid $red;
-  &--title {
-    font-size: 1.4em;
-  }
-  &--date {
-    color: $navy;
-    font-size: .75em;
-  }
-  a:visited,
-  a:hover {
-    color: $red;
-  }
+  max-width: 36rem;
+  width: 10rem;
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
 }

@@ -3,6 +3,7 @@ layout: post
 title: "Setting Up Data Directory in Jekyll"
 date: 2016-03-07
 categories: jekyll update
+image: https://unsplash.it/180/180?image=1075
 ---
 
 The "other" page on this site is used as a catchall to add any projects I am working on, resources I find helpful learning to code, and any miscellaneous people or projects I find inspiring. Because there are only a couple of links for each category I could easily just add it as HTML each time. But if, as I hope, I add more in the future it will become cumbersome to keep adding each link individually. Enter the ```_data``` directory.

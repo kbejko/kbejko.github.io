@@ -3,6 +3,7 @@ layout: post
 title: "Project Euler Problem 7"
 date: 2016-03-12
 categories: project-euler
+image: https://unsplash.it/180/180?image=1068
 ---
 
 10001st Prime Number

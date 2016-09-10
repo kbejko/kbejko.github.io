@@ -1,0 +1,16 @@
+---
+layout: default
+title: Journal
+---
+<ul id="journal" class="journal__list">
+  {% for post in site.posts %}
+    <li class="journal__post">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <h1 class="journal__post--title">
+          {{ post.title }}
+        </h1>
+        <span class="journal__post--date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

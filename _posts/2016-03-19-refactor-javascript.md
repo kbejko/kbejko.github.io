@@ -3,6 +3,7 @@ layout: post
 title: "Refactor JavaScript"
 date: 2016-03-19
 categories: jekyll update
+image: https://unsplash.it/180/180?image=1076
 ---
 
 Fair warning, this post was written concurrently while figuring out the code.

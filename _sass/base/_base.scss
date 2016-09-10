@@ -4,26 +4,34 @@
 
 body {
   background-color: $white;
-  color: $navy;
-  font-family: $base-font-family;
+  color: $dark;
+  font-family: $body-font;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  font-family: $heading-font;
+  font-size: $heading-font-size;
 }
 
 a {
   color: $blue;
   text-decoration: none;
-  &:hover {
-    color: $red;
-  }
 }
 
 p {
   margin-bottom: 1em;
+  font-weight: 400;
 }
 
 code {
   padding: 1px 5px;
+}
+
+section {
+  width: 100%;
 }
 
 .highlight {

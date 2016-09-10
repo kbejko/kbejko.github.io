@@ -1,0 +1,32 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__full {
+    flex: 0 0 100%;
+  }
+  &__half {
+    flex: 0 0 50%;
+  }
+  &__third {
+    flex: 0 0 33.3333%;
+  }
+  &__quarter {
+    flex: 0 0 25%;
+  }
+  &__tenth {
+    flex: 0 0 10%;
+  }
+
+  &__sm-gut {
+    margin: -1rem 0 1rem -1rem;
+    padding: 1rem 0 0 1rem;
+  }
+  &__g-gut {
+    margin: -2rem 0 2rem -2rem;
+    padding: 2rem 0 0 2rem;
+  }
+}

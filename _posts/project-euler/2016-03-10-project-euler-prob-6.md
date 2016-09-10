@@ -3,6 +3,7 @@ layout: post
 title: "Project Euler Problem 6"
 date: 2016-03-10
 categories: project-euler
+image: https://unsplash.it/180/180?image=1065
 ---
 
 Sum Square Difference

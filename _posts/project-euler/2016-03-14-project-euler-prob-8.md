@@ -3,6 +3,7 @@ layout: post
 title: "Project Euler Problem 8"
 date: 2016-03-14
 categories: project-euler
+image: https://unsplash.it/180/180?image=1081
 ---
 
 Largest Product in a Series

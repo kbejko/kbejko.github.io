@@ -1,90 +1,9 @@
 .site__header {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: $white;
-  // box-shadow: $box-shadow-light, $box-shadow-dark;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  height: 4rem;
-  left: 0;
+  width: 100%;
+  z-index: 11;
   position: fixed;
-  right: 0;
-  z-index: 2;
-  transition: box-shadow .4s;
-
-  &--logo {
-    background: url('../assets/img/Logo.svg');
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-    height: 3rem;
-    width: 3rem;
-
-    transform: translateY(0);
-    transition: transform 1s;
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: -2px;
-      left: 50%;
-      height: 2px;
-      width: 50%;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.28);
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.1);
-      transform: translate(-50%, 0);
-      transition: transform 1s;
-    }
-    &:hover {
-      transform: translateY(-.5rem);
-      transition: transform 1s;
-    }
-    &:hover::after {
-      transform: translate(-50%, .5rem) scale(0.50);
-      transition: transform 1s;
-    }
-  }
-
-  &--name {
-    font-size: 1em;
-    color: $navy;
-  }
-
-  &--burger {
-    cursor: pointer;
-    width: 2rem;
-
-    .line-top, .line-bottom {
-      background: $blue;
-      display: block;
-      height: .25rem;
-      -webkit-transition: all 0.5s ease-in-out;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-      -webkit-transform-origin: .47rem;
-              transform-origin: .47rem; /*this is as close as I can get it to an x*/
-    }
-    .line-top {
-      margin-bottom: .5rem;
-    }
-  }
-  .rotate-down {
-    background: $red;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  .rotate-up {
-    background: $red;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
+ h1 {
+   font-size: 2rem;
+   text-align: center;
+ }
 }

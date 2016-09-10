@@ -3,6 +3,7 @@ layout: post
 title: "Project Euler Problem 4"
 date: 2016-03-04
 categories: project-euler
+image: https://unsplash.it/180/180?image=1051
 ---
 
 Largest Palindrome Product
